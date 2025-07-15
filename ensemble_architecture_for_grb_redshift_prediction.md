@@ -1,4 +1,4 @@
- **Stacked ensemble model** for predicting redshift values from gamma-ray burst (GRB) data. Break down the base model architecture:
+**Stacked ensemble** model for predicting redshift values from **gamma-ray burst (GRB)** data. Below is the breakdown of the base model architecture:
 
 ## Base Model Architecture
 
