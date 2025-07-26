@@ -3,6 +3,18 @@
 This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potential cosmological standard candles, focusing on improving their standardization and refining empirical relations like the Amati and Yonetoku relations. By exploring correlations between observable quantities and derived cosmological parameters, we aim to constrain the Hubble constant and dark energy density. The goal is to enhance redshift calculations and contribute to understanding the universe's expansion.
 
 
+#### 1. CONTEXT
+
+Astrophysical data is expanding at an unprecedented rate as modern telescopes and detectors continue to evolve. Traditional methods struggle to keep pace with the growing data volumes, often missing subtle patterns and rare events. Manual classification is both time-consuming and prone to errors. However, this presents a significant opportunity. Machine Learning (ML) is rapidly becoming the tool of choice for analyzing astrophysical data, acting as the "telescope" of the 21st century.
+
+##### Why Machine Learning?
+
+- **Process Unprecedented Data Volumes**: From gigabytes to exabytes, ML scales with the universe's complexity, handling massive datasets efficiently.
+- **Identify Hidden Patterns**: ML enables the discovery of anomalies, classification of celestial objects, and the detection of faint signals invisible to the human eye.
+- **Accelerate Discovery**: By automating repetitive tasks, ML frees astronomers to focus on more complex analyses and theoretical advancements.
+- **Uncover New Physics**: ML can reveal previously undetectable relationships and structures, paving the way for groundbreaking theories.
+
+
 ##### A. Cosmological Standard Candles
 
 In cosmology, "standard candles" are astronomical objects with a known intrinsic brightness. This predictable luminosity allows astronomers to measure distances in the universe using the inverse-square law of light. Standard candles play a key role in constructing the "cosmic distance ladder," which helps determine the scale of the universe and its expansion. Examples include Cepheid variables and Type Ia supernovae.
