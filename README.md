@@ -80,6 +80,34 @@ Data/
 - **Derived Parameters**: Isotropic energy (Eiso), peak luminosity (Liso)
 - **Cosmological Data**: Redshift (z), luminosity distance (DL)
 
+### Accessing Specific Fermi-GBM Columns
+
+You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog](https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dfermigbrst&Action=More+Options) using the HEASARC Browse interface.
+
+```markdown
+## Retrieving Fermi GBM Data with Selected Columns
+
+Visit the [FERMIGBRST Table Query Page](https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dfermigbrst&Action=More+Options) and follow these steps to extract relevant features:
+
+### Columns to Include
+
+- `name`
+- `t90`
+- `t90_error`
+- `flnc_band_alpha`
+- `flnc_band_alpha_pos_err`
+- `flnc_band_alpha_neg_err`
+- `flnc_band_beta`
+- `flnc_band_beta_pos_err`
+- `flnc_band_beta_neg_err`
+- `flnc_band_epeak`
+- `flnc_band_epeak_pos_err`
+- `flnc_band_epeak_neg_err`
+- `flnc_band_ergflnc`
+- `flnc_band_ergflnc_error`
+```
+
+
 ## Methodology
 
 ### Machine Learning Approaches
