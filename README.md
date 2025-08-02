@@ -111,14 +111,14 @@ Data/
 
 ## Results
 
-### Key Findings
+### Key Findings (Subject to Amendments)
 
 - **Improved Standardization**: ML models achieve 15-20% reduction in scatter compared to traditional empirical relations
 - **Extended Redshift Range**: Successful calibration of GRBs up to z ~ 9
 - **Cosmological Constraints**: Competitive constraints on H₀ with ~5% precision
 - **Novel Correlations**: Discovery of multi-parameter relations not captured by traditional methods
 
-### Performance Metrics
+### Performance Metrics (Subject to Amendments)
 
 | Model | R² Score | RMSE | MAE |
 |-------|----------|------|-----|
