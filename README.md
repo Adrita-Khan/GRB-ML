@@ -29,7 +29,7 @@ This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potenti
 - [License](#license)
 
 
-## 🔬 Background
+## Background
 
 ### Context
 
@@ -108,43 +108,6 @@ Data/
 - **Model Comparison**: Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC)
 - **Uncertainty Quantification**: Bootstrap resampling and cross-validation
 
-## Usage
-
-### Data Preprocessing
-
-```python
-from grb_ml.preprocessing import DataPreprocessor
-
-preprocessor = DataPreprocessor()
-clean_data = preprocessor.clean_data('Data/grb_catalog.csv')
-features = preprocessor.extract_features(clean_data)
-```
-
-### Model Training
-
-```python
-from grb_ml.models import GRBRegressor
-
-# Initialize and train model
-model = GRBRegressor(model_type='xgboost')
-model.fit(X_train, y_train)
-
-# Evaluate performance
-scores = model.evaluate(X_test, y_test)
-print(f"R² Score: {scores['r2']:.3f}")
-print(f"RMSE: {scores['rmse']:.3f}")
-```
-
-### Cosmological Parameter Estimation
-
-```python
-from grb_ml.cosmology import CosmologyAnalyzer
-
-analyzer = CosmologyAnalyzer()
-results = analyzer.fit_cosmology(grb_data, model_predictions)
-analyzer.plot_hubble_diagram()
-analyzer.generate_report()
-```
 
 ## Results
 
