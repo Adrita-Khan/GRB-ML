@@ -63,7 +63,7 @@ The project utilizes GRB observational data from multiple sources:
 - **Ground-based Follow-up**: Optical and near-infrared observations
 - **Literature Compilation**: Curated dataset from peer-reviewed publications
 
-### Data Structure
+### Data Structure (Subject to Amendments)
 
 ```
 Data/
@@ -127,7 +127,7 @@ Data/
 | Neural Network | 0.863 | 0.225 | 0.182 |
 | Ensemble | 0.884 | 0.207 | 0.168 |
 
-## Repository Structure
+## Repository Structure (Subject to Amendments)
 
 ```
 GRB-ML/
@@ -156,25 +156,7 @@ GRB-ML/
 - **Improve Empirical Relations**: Develop tighter, more accurate relations that provide better standardization than existing Amati and Yonetoku relations.
 - **Cross-validation**: Ensure robust model performance through comprehensive testing and validation procedures.
 
-## Contributing
 
-We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### How to Contribute
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Areas for Contribution
-
-- Data collection and curation
-- New ML model implementations
-- Cosmological analysis improvements
-- Documentation and tutorials
-- Bug fixes and performance optimizations
 
 ## License
 
