@@ -85,10 +85,6 @@ Data/
 You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog](https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dfermigbrst&Action=More+Options) using the HEASARC Browse interface.
 
 ```markdown
-## Retrieving Fermi GBM Data with Selected Columns
-
-Visit the [FERMIGBRST Table Query Page](https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dfermigbrst&Action=More+Options) and follow these steps to extract relevant features:
-
 ### Columns to Include
 
 - `name`
