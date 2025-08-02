@@ -20,7 +20,6 @@ This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potenti
 ## Table of Contents
 
 - [Background](#background)
-- [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Dataset](#dataset)
 - [Methodology](#methodology)
@@ -28,7 +27,7 @@ This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potenti
 - [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
+
 
 ## 🔬 Background
 
@@ -207,7 +206,7 @@ GRB-ML/
 - **Improve Empirical Relations**: Develop tighter, more accurate relations that provide better standardization than existing Amati and Yonetoku relations.
 - **Cross-validation**: Ensure robust model performance through comprehensive testing and validation procedures.
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
@@ -227,13 +226,13 @@ We welcome contributions from the community! Please see our [Contributing Guidel
 - Documentation and tutorials
 - Bug fixes and performance optimizations
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 
-## 📚 Citation
+## Citation
 
 If you use this code in your research, please cite:
 
