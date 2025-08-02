@@ -8,7 +8,7 @@
 
 This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potential cosmological standard candles, focusing on improving their standardization and refining empirical relations like the Amati and Yonetoku relations. By exploring correlations between observable quantities and derived cosmological parameters, we aim to constrain the Hubble constant and dark energy density. The goal is to enhance redshift calculations and contribute to understanding the universe's expansion.
 
-## 🌟 Features
+## Features
 
 - **Advanced ML Models**: Implementation of various machine learning algorithms for GRB analysis
 - **Cosmological Parameter Estimation**: Tools to constrain Hubble constant and dark energy density
@@ -17,7 +17,7 @@ This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potenti
 - **Empirical Relations**: Analysis and improvement of Amati and Yonetoku relations
 - **Cross-validation Framework**: Robust testing methodology for model validation
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Background](#background)
 - [Installation](#installation)
@@ -53,61 +53,9 @@ Gamma-ray bursts (GRBs) are the most powerful explosions in the universe, capabl
 
 Despite their promise, GRBs aren't perfect standard candles. However, empirical relations like the **Amati Relation** (relating total energy release to peak energy in the gamma-ray spectrum) and the **Yonetoku Relation** (relating peak luminosity to peak energy) have been proposed. These relations link observable quantities to cosmologically dependent parameters, providing a means to constrain cosmological models.
 
-## 🚀 Installation
 
-### Prerequisites
 
-- Python 3.8 or higher
-- pip package manager
-- Git
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/Adrita-Khan/GRB-ML.git
-cd GRB-ML
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Alternative: Using Conda
-
-```bash
-conda env create -f environment.yml
-conda activate grb-ml
-```
-
-## ⚡ Quick Start
-
-```python
-import pandas as pd
-from grb_ml import GRBAnalyzer, CosmologyFitter
-
-# Load GRB data
-data = pd.read_csv('Data/grb_catalog.csv')
-
-# Initialize analyzer
-analyzer = GRBAnalyzer()
-
-# Preprocess data
-processed_data = analyzer.preprocess(data)
-
-# Fit ML model
-model = analyzer.fit_model(processed_data)
-
-# Make predictions
-predictions = model.predict(test_data)
-
-# Analyze cosmological parameters
-cosmo_fitter = CosmologyFitter()
-h0, omega_m = cosmo_fitter.constrain_parameters(predictions)
-```
-
-## 📊 Dataset
+## Dataset
 
 The project utilizes GRB observational data from multiple sources:
 
@@ -133,7 +81,7 @@ Data/
 - **Derived Parameters**: Isotropic energy (Eiso), peak luminosity (Liso)
 - **Cosmological Data**: Redshift (z), luminosity distance (DL)
 
-## 🔬 Methodology
+## Methodology
 
 ### Machine Learning Approaches
 
@@ -161,7 +109,7 @@ Data/
 - **Model Comparison**: Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC)
 - **Uncertainty Quantification**: Bootstrap resampling and cross-validation
 
-## 📖 Usage
+## Usage
 
 ### Data Preprocessing
 
@@ -212,7 +160,7 @@ Notebooks/
 └── 05_results_visualization.ipynb   # Results and plotting
 ```
 
-## 📈 Results
+## Results
 
 ### Key Findings
 
@@ -230,7 +178,7 @@ Notebooks/
 | Neural Network | 0.863 | 0.225 | 0.182 |
 | Ensemble | 0.884 | 0.207 | 0.168 |
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 GRB-ML/
@@ -252,7 +200,7 @@ GRB-ML/
 └── setup.py                       # Package installation script
 ```
 
-## 🎯 Objectives
+## Objectives
 
 - **Explore Correlations**: Use ML techniques to uncover deeper correlations between observable quantities and cosmological parameters, standardizing GRBs as cosmological candles.
 - **Constrain Cosmological Parameters**: Using the correlations found, ML can help constrain key cosmological parameters, including the Hubble constant and dark energy density.
@@ -283,13 +231,7 @@ We welcome contributions from the community! Please see our [Contributing Guidel
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
 
-- **Swift-BAT Team** for providing comprehensive GRB data
-- **Fermi-GBM Collaboration** for high-energy gamma-ray observations
-- **Astropy Community** for essential astronomical computing tools
-- **Scikit-learn Contributors** for machine learning infrastructure
-- **Research Supervisors and Collaborators** for guidance and support
 
 ## 📚 Citation
 
@@ -310,11 +252,6 @@ If you use this code in your research, please cite:
 - **GitHub**: [@Adrita-Khan](https://github.com/Adrita-Khan)
 - **Project Link**: [https://github.com/Adrita-Khan/GRB-ML](https://github.com/Adrita-Khan/GRB-ML)
 
-## 🔗 Related Projects
-
-- [Astropy](https://www.astropy.org/) - Community Python library for astronomy
-- [CosmoPy](https://github.com/cosmopy/cosmopy) - Cosmological calculations in Python
-- [GRBWeb](https://swift.gsfc.nasa.gov/archive/grb_table/) - Swift GRB catalog and data
 
 ---
 
