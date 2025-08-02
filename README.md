@@ -146,19 +146,6 @@ analyzer.plot_hubble_diagram()
 analyzer.generate_report()
 ```
 
-### Jupyter Notebooks
-
-Explore the analysis step-by-step using our interactive notebooks:
-
-```
-Notebooks/
-├── 01_data_exploration.ipynb        # Initial data analysis
-├── 02_feature_engineering.ipynb     # Feature creation and selection
-├── 03_model_training.ipynb          # ML model development
-├── 04_cosmological_analysis.ipynb   # Parameter estimation
-└── 05_results_visualization.ipynb   # Results and plotting
-```
-
 ## Results
 
 ### Key Findings
