@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" modified="2025-08-05T05:00:00.000Z" agent="5.0 (Windows)" etag="XYZ" version="20.7.9" type="device">
+  <diagram id="rfiTimeline" name="Timeline">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Timeline horizontal line -->
+        <mxCell id="timelineLine" value="" style="strokeColor=#000000;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="900" height="0" as="geometry"/>
+        </mxCell>
+
+        <!-- Decades labels -->
+        <mxCell id="early2000s" value="2001-2005" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mid2000s" value="2005-2010" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="early2010s" value="2010-2012" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="250" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="mid2010s" value="2013-2017" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="250" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="late2010s" value="2017-2019" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="250" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="2020s-early" value="2020-2022" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="250" width="90" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="2023-2025" value="2023-2025" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="250" width="90" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Timeline points and descriptions -->
+        
+        <!-- 2001-2005 SVD -->
+        <mxCell id="svdPoint" value="" style="ellipse;fillColor=#1976d2;strokeColor=#155a9c;" vertex="1" parent="1">
+          <mxGeometry x="70" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="svdLabel" value="Singular Value Decomposition (2001-2005): Early eigenvalue approach for RFI detection" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="20" y="180" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2005-2010 PCA -->
+        <mxCell id="pcaPoint" value="" style="ellipse;fillColor=#388e3c;strokeColor=#2d6a2b;" vertex="1" parent="1">
+          <mxGeometry x="170" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="pcaLabel" value="Principal Component Analysis (2005-2010): Statistical feature vector method" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="220" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2010-2012 AOFlagger -->
+        <mxCell id="aoflaggerPoint" value="" style="ellipse;fillColor=#fbc02d;strokeColor=#b48f1c;" vertex="1" parent="1">
+          <mxGeometry x="270" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="aoflaggerLabel" value="AOFlagger (SumThreshold, 2010-2012): Scale-invariant RFI detection" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="220" y="180" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2013-2017 ML algorithms -->
+        <mxCell id="classicMLPoint" value="" style="ellipse;fillColor=#e64a19;strokeColor=#a43812;" vertex="1" parent="1">
+          <mxGeometry x="370" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="classicMLLabel" value="Classic ML (2013-2017): KNN, Random Forest, Naive Bayes" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="320" y="180" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2017 U-Net -->
+        <mxCell id="unetPoint" value="" style="ellipse;fillColor=#6a1b9a;strokeColor=#4a116a;" vertex="1" parent="1">
+          <mxGeometry x="470" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="unetLabel" value="U-Net (2017): First deep CNN adaptation for RFI detection" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="420" y="180" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2018 CNN & CNN-LSTM -->
+        <mxCell id="cnnPoint" value="" style="ellipse;fillColor=#00796b;strokeColor=#004d40;" vertex="1" parent="1">
+          <mxGeometry x="520" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="cnnLabel" value="CNN & CNN-LSTM (2018): Deep learning for transient RFI" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="470" y="180" width="220" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2019 GAN, U-NetIM -->
+        <mxCell id="ganPoint" value="" style="ellipse;fillColor=#c2185b;strokeColor=#7b1440;" vertex="1" parent="1">
+          <mxGeometry x="600" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="ganLabel" value="GAN (2019): Generative models for RFI & U-NetIM improvements" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="550" y="180" width="230" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2020 RFI-Net, PILAE, R-Net -->
+        <mxCell id="rfiNetPoint" value="" style="ellipse;fillColor=#ff5722;strokeColor=#c13900;" vertex="1" parent="1">
+          <mxGeometry x="680" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="rfiNetLabel" value="RFI-Net, PILAE, R-Net (2020): Autoencoders & transfer learning" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="630" y="180" width="250" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2021 AC-UNet, RFI-GAN, SVM -->
+        <mxCell id="acUnetPoint" value="" style="ellipse;fillColor=#009688;strokeColor=#00675b;" vertex="1" parent="1">
+          <mxGeometry x="740" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="acUnetLabel" value="AC-UNet, RFI-GAN, SVM (2021): Atrous conv, GAN mask & active SVM" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="690" y="180" width="250" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2022 NLN, Variational Encoder -->
+        <mxCell id="nlnPoint" value="" style="ellipse;fillColor=#3f51b5;strokeColor=#2c387e;" vertex="1" parent="1">
+          <mxGeometry x="810" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="nlnLabel" value="NLN & Variational Encoder (2022): Unsupervised & self-learning" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="760" y="180" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- 2023-2025 SNNs, transformers, LSM, attention -->
+        <mxCell id="recentPoint" value="" style="ellipse;fillColor=#673ab7;strokeColor=#432d7f;" vertex="1" parent="1">
+          <mxGeometry x="880" y="290" width="10" height="10" as="geometry"/>
+        </mxCell>
+        <mxCell id="recentLabel" value="Recent (2023-2025): Spiking NNs, Vision Transformers, LSM, Attention models" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="830" y="180" width="280" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
