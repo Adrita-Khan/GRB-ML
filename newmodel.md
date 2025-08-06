@@ -183,12 +183,4 @@ Band_flc = Band_flc[Band_flc['Beta'] <= -2]  # Remove outliers
 ```
 Focuses on long-duration GRBs with physically reasonable spectral parameters.
 
-## Model Strengths
 
-1. **Multi-level Learning**: Base models + meta-learner hierarchy
-2. **Feature Engineering**: Appropriate log-transforms and scaling
-3. **Validation**: Statistical tests confirm prediction quality
-4. **Practical Output**: Generates usable pseudo-redshift catalog
-5. **Flexibility**: Easy to add more base models or change meta-learner
-
-This approach represents a sophisticated application of ensemble learning to astrophysical parameter estimation, combining domain knowledge with advanced ML techniques.
