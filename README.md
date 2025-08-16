@@ -146,12 +146,14 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 
 ### Performance Metrics (Subject to Amendments)
 
-| Model | R² Score | RMSE | MAE |
-|-------|----------|------|-----|
-| Random Forest | 0.852 | 0.234 | 0.189 |
-| XGBoost | 0.871 | 0.218 | 0.175 |
-| Neural Network | 0.863 | 0.225 | 0.182 |
-| Ensemble | 0.884 | 0.207 | 0.168 |
+> **Note:** The following values are **placeholders** and subject to change after final experimentation and validation.
+
+| Model          | R² Score | RMSE  | MAE  |
+|----------------|----------|-------|------|
+| Random Forest  | 0.852    | 0.234 | 0.189 |
+| XGBoost        | 0.871    | 0.218 | 0.175 |
+| Neural Network | 0.863    | 0.225 | 0.182 |
+| Ensemble       | 0.884    | 0.207 | 0.168 |
 
 ## Repository Structure (Subject to Amendments)
 
