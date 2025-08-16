@@ -6,7 +6,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Adrita-Khan/GRB-ML)](https://github.com/Adrita-Khan/GRB-ML/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Adrita-Khan/GRB-ML)](https://github.com/Adrita-Khan/GRB-ML/stargazers)
 ---
-*This project is ongoing and subject to continuous advancements and modifications.*
+*Note: This project is ongoing and subject to continuous advancements and modifications.*
 
 This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potential cosmological standard candles, focusing on improving their standardization and refining empirical relations like the Amati and Yonetoku relations. By exploring correlations between observable quantities and derived cosmological parameters, we aim to constrain the Hubble constant and dark energy density. The goal is to enhance redshift calculations and contribute to understanding the universe's expansion.
 
