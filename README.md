@@ -194,22 +194,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 
-## Citation
 
-If you use this code in your research, please cite:
-
-```bibtex
-@software{grb_ml_2024,
-  author = {Khan, Adrita},
-  title = {GRB-ML: Machine Learning Analysis of Gamma-Ray Bursts as Cosmological Standard Candles},
-  url = {https://github.com/Adrita-Khan/GRB-ML},
-  year = {2024}
-}
-```
 
 ## Contact
 
-- **Author**: Adrita Khan
+-  Adrita Khan
 - **GitHub**: [@Adrita-Khan](https://github.com/Adrita-Khan)
 - **Project Link**: [https://github.com/Adrita-Khan/GRB-ML](https://github.com/Adrita-Khan/GRB-ML)
 
