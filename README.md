@@ -21,19 +21,7 @@ It is a project of [CAPP](https://www.uj.ac.za/faculties/science/departments-2/p
 - **Empirical Relations**: Analysis and improvement of Amati and Yonetoku relations
 - **Cross-validation Framework**: Robust testing methodology for model validation
 
-## Table of Contents
 
-- [Background](#background)
-- [Quick Start](#quick-start)
-- [Dataset](#dataset)
-- [Methodology](#methodology)
-- [Usage](#usage)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
-
-
-## Background
 
 ### Context
 
@@ -157,27 +145,7 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 | Neural Network | 0.863    | 0.225 | 0.182 |
 | Ensemble       | 0.884    | 0.207 | 0.168 |
 
-## Repository Structure (Subject to Amendments)
 
-```
-GRB-ML/
-├── Data/                           # Raw and processed datasets
-├── Notebooks/                      # Jupyter notebooks for analysis
-├── grb_ml/                        # Main Python package
-│   ├── __init__.py
-│   ├── preprocessing.py           # Data cleaning and preparation
-│   ├── models.py                  # ML model implementations
-│   ├── cosmology.py               # Cosmological analysis tools
-│   ├── visualization.py           # Plotting and visualization
-│   └── utils.py                   # Utility functions
-├── tests/                         # Unit tests
-├── docs/                          # Documentation
-├── requirements.txt               # Python dependencies
-├── environment.yml                # Conda environment file
-├── LICENSE                        # MIT License
-├── README.md                      # This file
-└── setup.py                       # Package installation script
-```
 
 ## Objectives
 
@@ -193,7 +161,15 @@ GRB-ML/
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
+---
 
+References: 
+1. [MNRAS Article](https://academic.oup.com/mnras/article/529/3/2676/7611713)
+2. [HEASARC Fermi GRB Browse](https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html)
+3. [Fermi GBM Data Analysis](https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/)
+4. [Ioffe zGRBs Part 2](https://www.ioffe.ru/LEA/zGRBs/part2/index.html)
+
+----
 
 
 ## Contact
