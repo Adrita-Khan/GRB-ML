@@ -160,14 +160,13 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
----
-
-References: 
-1. [MNRAS Article](https://academic.oup.com/mnras/article/529/3/2676/7611713)
-2. [HEASARC Fermi GRB Browse](https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html)
-3. [Fermi GBM Data Analysis](https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/)
-4. [Ioffe zGRBs Part 2](https://www.ioffe.ru/LEA/zGRBs/part2/index.html)
+----
+References:  
+1. [MNRAS Article](https://academic.oup.com/mnras/article/529/3/2676/7611713)  
+2. [HEASARC Fermi GRB Browse](https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html)  
+3. [Fermi GBM Data Analysis](https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/)  
+4. [Ioffe zGRBs Part 2](https://www.ioffe.ru/LEA/zGRBs/part2/index.html)  
+5. [Fermi GBM Data Tools - Data Finders](https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/gbm_data_tools/gdt-docs/notebooks/DataFinders.html)  
 
 ----
 
