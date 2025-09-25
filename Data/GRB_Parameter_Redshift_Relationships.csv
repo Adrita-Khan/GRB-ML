@@ -1,0 +1,307 @@
+Parameter,Category,Relationship_with_Redshift,Description
+name,Identifier,None,Identifier/catalog parameter with no physical relationship to redshift
+ra,Position,None,"Coordinate parameters (right ascension, declination, galactic coordinates) have no direct physical relationship to redshift, though they can be used for statistical clustering analyses"
+dec,Position,None,"Coordinate parameters (right ascension, declination, galactic coordinates) have no direct physical relationship to redshift, though they can be used for statistical clustering analyses"
+trigger_time,Temporal Metadata,None,Observational timing parameters with no direct relationship to redshift
+t90,Duration,Strong inverse correlation,Duration parameters show strong inverse correlation with redshift due to cosmological time dilation effect: T_observed = T_intrinsic × (1+z)
+t90_error,Duration,Strong inverse correlation,Duration parameters show strong inverse correlation with redshift due to cosmological time dilation effect: T_observed = T_intrinsic × (1+z)
+t90_start,Duration,Strong inverse correlation,Duration parameters show strong inverse correlation with redshift due to cosmological time dilation effect: T_observed = T_intrinsic × (1+z)
+fluence,Energy,Strong inverse correlation,Fluence (time-integrated flux) decreases with redshift due to both luminosity distance effects and cosmological time dilation
+fluence_error,Uncertainty,Moderate correlation,Fluence measurement uncertainties increase with redshift due to lower signal-to-noise ratios
+flux_1024,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_1024_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flux_1024_time,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_64,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_64_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_band_ampl,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_band_ampl_pos_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_band_ampl_neg_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_band_epeak,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+flnc_band_epeak_pos_err,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+flnc_band_epeak_neg_err,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+flnc_band_alpha,Spectral Index,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+flnc_band_alpha_pos_err,Uncertainty,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+flnc_band_alpha_neg_err,Uncertainty,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+flnc_band_beta,Spectral Index,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+flnc_band_beta_pos_err,Uncertainty,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+flnc_band_beta_neg_err,Uncertainty,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+flnc_spectrum_start,Time Interval,None,Observational timing parameters with no direct relationship to redshift
+flnc_spectrum_stop,Time Interval,None,Observational timing parameters with no direct relationship to redshift
+pflx_best_fitting_model,Model Selection,Weak correlation,Best-fitting spectral model selection may show weak dependence on redshift due to signal-to-noise effects
+pflx_best_model_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+flnc_best_fitting_model,Model Selection,Weak correlation,Best-fitting spectral model selection may show weak dependence on redshift due to signal-to-noise effects
+flnc_best_model_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+actual_1024ms_interval,Time Interval,None,Data analysis time intervals are observational choices independent of redshift
+actual_256ms_interval,Time Interval,None,Data analysis time intervals are observational choices independent of redshift
+actual_64ms_interval,Time Interval,None,Data analysis time intervals are observational choices independent of redshift
+back_interval_high_start,Time Interval,None,Data analysis time intervals are observational choices independent of redshift
+back_interval_high_stop,Time Interval,None,Data analysis time intervals are observational choices independent of redshift
+back_interval_low_start,Time Interval,None,Data analysis time intervals are observational choices independent of redshift
+back_interval_low_stop,Time Interval,None,Data analysis time intervals are observational choices independent of redshift
+bcat_detector_mask,Instrumental,None,Detector mask configuration is independent of source redshift
+bcatalog,Instrumental,None,Identifier/catalog parameter with no physical relationship to redshift
+bii,Galactic Coordinates,None,"Coordinate parameters (right ascension, declination, galactic coordinates) have no direct physical relationship to redshift, though they can be used for statistical clustering analyses"
+duration_energy_high,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+duration_energy_low,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+error_radius,Localization,Weak correlation,Localization uncertainty may weakly increase with redshift due to lower signal-to-noise ratios
+flnc_band_dof,Fit Quality,None,Degrees of freedom in spectral fitting are independent of redshift as they depend only on model complexity
+flnc_band_ergflnc,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+flnc_band_ergflnc_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+flnc_band_ergflncb,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+flnc_band_ergflncb_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+flnc_band_ergflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_band_ergflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_band_phtflnc,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+flnc_band_phtflnc_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+flnc_band_phtflncb,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+flnc_band_phtflncb_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+flnc_band_phtflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_band_phtflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_band_phtfluxb,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_band_phtfluxb_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_band_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+flnc_band_redfitstat,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+flnc_band_statistic,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+flnc_comp_ampl,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_comp_ampl_neg_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_comp_ampl_pos_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_comp_dof,Fit Quality,None,Degrees of freedom in spectral fitting are independent of redshift as they depend only on model complexity
+flnc_comp_epeak,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+flnc_comp_epeak_neg_err,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+flnc_comp_epeak_pos_err,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+flnc_comp_ergflnc,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+flnc_comp_ergflnc_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+flnc_comp_ergflncb,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+flnc_comp_ergflncb_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+flnc_comp_ergflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_comp_ergflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_comp_index,Spectral Index,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+flnc_comp_index_neg_err,Uncertainty,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+flnc_comp_index_pos_err,Uncertainty,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+flnc_comp_phtflnc,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+flnc_comp_phtflnc_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+flnc_comp_phtflncb,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+flnc_comp_phtflncb_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+flnc_comp_phtflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_comp_phtflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_comp_phtfluxb,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_comp_phtfluxb_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_comp_pivot,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_comp_pivot_neg_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_comp_pivot_pos_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_comp_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+flnc_comp_redfitstat,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+flnc_comp_statistic,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+flnc_plaw_ampl,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_plaw_ampl_neg_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_plaw_ampl_pos_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_plaw_dof,Fit Quality,None,Degrees of freedom in spectral fitting are independent of redshift as they depend only on model complexity
+flnc_plaw_ergflnc,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+flnc_plaw_ergflnc_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+flnc_plaw_ergflncb,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+flnc_plaw_ergflncb_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+flnc_plaw_ergflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_plaw_ergflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_plaw_index,Spectral Index,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+flnc_plaw_index_neg_err,Uncertainty,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+flnc_plaw_index_pos_err,Uncertainty,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+flnc_plaw_phtflnc,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+flnc_plaw_phtflnc_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+flnc_plaw_phtflncb,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+flnc_plaw_phtflncb_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+flnc_plaw_phtflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_plaw_phtflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_plaw_phtfluxb,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_plaw_phtfluxb_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_plaw_pivot,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_plaw_pivot_neg_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_plaw_pivot_pos_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_plaw_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+flnc_plaw_redfitstat,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+flnc_plaw_statistic,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+flnc_sbpl_ampl,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_sbpl_ampl_neg_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_sbpl_ampl_pos_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+flnc_sbpl_brken,Spectral Break,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+flnc_sbpl_brken_neg_err,Uncertainty,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+flnc_sbpl_brken_pos_err,Uncertainty,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+flnc_sbpl_brksc,Spectral Break,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+flnc_sbpl_brksc_neg_err,Uncertainty,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+flnc_sbpl_brksc_pos_err,Uncertainty,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+flnc_sbpl_dof,Fit Quality,None,Degrees of freedom in spectral fitting are independent of redshift as they depend only on model complexity
+flnc_sbpl_ergflnc,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+flnc_sbpl_ergflnc_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+flnc_sbpl_ergflncb,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+flnc_sbpl_ergflncb_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+flnc_sbpl_ergflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_sbpl_ergflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_sbpl_indx1,Spectral Index,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+flnc_sbpl_indx1_neg_err,Uncertainty,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+flnc_sbpl_indx1_pos_err,Uncertainty,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+flnc_sbpl_indx2,Spectral Index,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+flnc_sbpl_indx2_neg_err,Uncertainty,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+flnc_sbpl_indx2_pos_err,Uncertainty,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+flnc_sbpl_phtflnc,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+flnc_sbpl_phtflnc_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+flnc_sbpl_phtflncb,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+flnc_sbpl_phtflncb_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+flnc_sbpl_phtflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_sbpl_phtflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_sbpl_phtfluxb,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flnc_sbpl_phtfluxb_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flnc_sbpl_pivot,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_sbpl_pivot_neg_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_sbpl_pivot_pos_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+flnc_sbpl_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+flnc_sbpl_redfitstat,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+flnc_sbpl_statistic,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+flu_high,Other,None to weak,Energy band definitions may show weak effects due to spectral evolution with redshift
+flu_low,Other,None to weak,Energy band definitions may show weak effects due to spectral evolution with redshift
+fluence_batse,Energy,Strong inverse correlation,Fluence (time-integrated flux) decreases with redshift due to both luminosity distance effects and cosmological time dilation
+fluence_batse_error,Uncertainty,Moderate correlation,Fluence measurement uncertainties increase with redshift due to lower signal-to-noise ratios
+flux_256,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_256_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flux_256_time,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_64_time,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_batse_1024,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_batse_1024_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flux_batse_1024_time,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_batse_256,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_batse_256_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flux_batse_256_time,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_batse_64,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+flux_batse_64_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+flux_batse_64_time,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+last_modified,Temporal Metadata,None,Identifier/catalog parameter with no physical relationship to redshift
+lii,Galactic Coordinates,None,"Coordinate parameters (right ascension, declination, galactic coordinates) have no direct physical relationship to redshift, though they can be used for statistical clustering analyses"
+pflx_band_alpha,Spectral Index,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+pflx_band_alpha_neg_err,Uncertainty,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+pflx_band_alpha_pos_err,Uncertainty,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+pflx_band_ampl,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_band_ampl_neg_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_band_ampl_pos_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_band_beta,Spectral Index,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+pflx_band_beta_neg_err,Uncertainty,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+pflx_band_beta_pos_err,Uncertainty,Weak to moderate correlation,Spectral indices may show weak evolution with redshift due to selection effects and possible intrinsic evolution of GRB populations
+pflx_band_dof,Fit Quality,None,Degrees of freedom in spectral fitting are independent of redshift as they depend only on model complexity
+pflx_band_epeak,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+pflx_band_epeak_neg_err,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+pflx_band_epeak_pos_err,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+pflx_band_ergflnc,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+pflx_band_ergflnc_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+pflx_band_ergflncb,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+pflx_band_ergflncb_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+pflx_band_ergflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_band_ergflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_band_phtflnc,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+pflx_band_phtflnc_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+pflx_band_phtflncb,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+pflx_band_phtflncb_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+pflx_band_phtflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_band_phtflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_band_phtfluxb,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_band_phtfluxb_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_band_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+pflx_band_redfitstat,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+pflx_band_statistic,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+pflx_comp_ampl,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_comp_ampl_neg_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_comp_ampl_pos_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_comp_dof,Fit Quality,None,Degrees of freedom in spectral fitting are independent of redshift as they depend only on model complexity
+pflx_comp_epeak,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+pflx_comp_epeak_neg_err,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+pflx_comp_epeak_pos_err,Spectral Energy,Strong correlation,"Peak energy shows strong correlation with redshift through Amati relation: E_peak,intrinsic = E_peak,observed × (1+z), fundamental for GRB cosmology"
+pflx_comp_ergflnc,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+pflx_comp_ergflnc_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+pflx_comp_ergflncb,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+pflx_comp_ergflncb_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+pflx_comp_ergflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_comp_ergflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_comp_index,Spectral Index,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+pflx_comp_index_neg_err,Uncertainty,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+pflx_comp_index_pos_err,Uncertainty,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+pflx_comp_phtflnc,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+pflx_comp_phtflnc_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+pflx_comp_phtflncb,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+pflx_comp_phtflncb_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+pflx_comp_phtflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_comp_phtflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_comp_phtfluxb,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_comp_phtfluxb_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_comp_pivot,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_comp_pivot_neg_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_comp_pivot_pos_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_comp_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+pflx_comp_redfitstat,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+pflx_comp_statistic,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+pflx_plaw_ampl,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_plaw_ampl_neg_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_plaw_ampl_pos_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_plaw_dof,Fit Quality,None,Degrees of freedom in spectral fitting are independent of redshift as they depend only on model complexity
+pflx_plaw_ergflnc,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+pflx_plaw_ergflnc_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+pflx_plaw_ergflncb,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+pflx_plaw_ergflncb_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+pflx_plaw_ergflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_plaw_ergflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_plaw_index,Spectral Index,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+pflx_plaw_index_neg_err,Uncertainty,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+pflx_plaw_index_pos_err,Uncertainty,Weak correlation,Spectral indices may show weak evolution with redshift due to selection effects
+pflx_plaw_phtflnc,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+pflx_plaw_phtflnc_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+pflx_plaw_phtflncb,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+pflx_plaw_phtflncb_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+pflx_plaw_phtflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_plaw_phtflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_plaw_phtfluxb,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_plaw_phtfluxb_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_plaw_pivot,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_plaw_pivot_neg_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_plaw_pivot_pos_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_plaw_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+pflx_plaw_redfitstat,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+pflx_plaw_statistic,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+pflx_sbpl_ampl,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_sbpl_ampl_neg_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_sbpl_ampl_pos_err,Spectral Normalization,Strong inverse correlation,Spectral amplitude decreases with redshift due to luminosity distance effects in observed frame
+pflx_sbpl_brken,Spectral Break,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+pflx_sbpl_brken_neg_err,Uncertainty,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+pflx_sbpl_brken_pos_err,Uncertainty,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+pflx_sbpl_brksc,Spectral Break,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+pflx_sbpl_brksc_neg_err,Uncertainty,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+pflx_sbpl_brksc_pos_err,Uncertainty,Moderate correlation,Break energies and scales in smoothly broken power law models show correlations with redshift through spectral evolution
+pflx_sbpl_dof,Fit Quality,None,Degrees of freedom in spectral fitting are independent of redshift as they depend only on model complexity
+pflx_sbpl_ergflnc,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+pflx_sbpl_ergflnc_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+pflx_sbpl_ergflncb,Energy,Strong correlation,Energy parameters show strong correlations with redshift through luminosity distance calculations and cosmological corrections
+pflx_sbpl_ergflncb_error,Uncertainty,Moderate correlation,Energy measurement uncertainties increase with redshift due to propagation of flux and distance errors
+pflx_sbpl_ergflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_sbpl_ergflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_sbpl_indx1,Spectral Index,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+pflx_sbpl_indx1_neg_err,Uncertainty,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+pflx_sbpl_indx1_pos_err,Uncertainty,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+pflx_sbpl_indx2,Spectral Index,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+pflx_sbpl_indx2_neg_err,Uncertainty,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+pflx_sbpl_indx2_pos_err,Uncertainty,Unknown/Complex,Parameter relationship with redshift requires detailed analysis of specific physical meaning
+pflx_sbpl_phtflnc,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+pflx_sbpl_phtflnc_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+pflx_sbpl_phtflncb,Photon Statistics,Moderate correlation,Photon-based parameters show moderate correlations with redshift through spectral evolution and detection limits
+pflx_sbpl_phtflncb_error,Uncertainty,Moderate correlation,Photon parameter uncertainties increase with redshift due to lower photon statistics
+pflx_sbpl_phtflux,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_sbpl_phtflux_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_sbpl_phtfluxb,Flux/Luminosity,Strong inverse correlation,Flux decreases with redshift due to luminosity distance relationship: F ∝ L/(4πd_L²) where d_L increases with redshift
+pflx_sbpl_phtfluxb_error,Uncertainty,Moderate correlation,Flux measurement uncertainties generally increase with redshift due to lower signal-to-noise ratios
+pflx_sbpl_pivot,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_sbpl_pivot_neg_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_sbpl_pivot_pos_err,Spectral Reference,Weak correlation,Pivot energy used in spectral fitting may show weak correlation with redshift through selection effects
+pflx_sbpl_redchisq,Fit Quality,Weak correlation,Reduced chi-squared values may show weak correlation with redshift due to decreasing signal-to-noise affecting fit quality
+pflx_sbpl_redfitstat,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+pflx_sbpl_statistic,Fit Quality,Weak correlation,Fit statistics may show weak correlation with redshift due to data quality effects
+pflx_spectrum_start,Time Interval,None,Observational timing parameters with no direct relationship to redshift
+pflx_spectrum_stop,Time Interval,None,Observational timing parameters with no direct relationship to redshift
+scat_detector_mask,Instrumental,None,Detector mask configuration is independent of source redshift
+scatalog,Instrumental,None,Identifier/catalog parameter with no physical relationship to redshift
+t50,Duration,Strong inverse correlation,Duration parameters show strong inverse correlation with redshift due to cosmological time dilation effect: T_observed = T_intrinsic × (1+z)
+t50_error,Duration,Strong inverse correlation,Duration parameters show strong inverse correlation with redshift due to cosmological time dilation effect: T_observed = T_intrinsic × (1+z)
+t50_start,Duration,Strong inverse correlation,Duration parameters show strong inverse correlation with redshift due to cosmological time dilation effect: T_observed = T_intrinsic × (1+z)
+trigger_name,Identifier,None,Identifier/catalog parameter with no physical relationship to redshift
