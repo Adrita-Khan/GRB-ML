@@ -1,0 +1,307 @@
+Parameter Name,Theoretical Relationship with Redshift,Relationship Explanation,Notes,Units,Known Redshift Dependence,Type of Parameter
+name,No relationship,Arbitrary identifier assigned to GRB detection,Naming convention only,Text,None,Identifier
+ra,No direct relationship,Right ascension coordinate on sky,"Sky position; redshift affects distance, not angular position",Degrees,None,Positional
+dec,No direct relationship,Declination coordinate on sky,"Sky position; redshift affects distance, not angular position",Degrees,None,Positional
+trigger_time,No relationship,Absolute trigger time in mission elapsed time,"Instrumental timing, not affected by source redshift",Seconds (MET),None,Temporal
+t90,Proportional to (1+z),"Duration containing 90% of burst energy, stretched by cosmological time dilation",Observed T90 = Intrinsic T90 × (1+z),Seconds,Linear with (1+z),Temporal
+t90_error,Proportional to (1+z),"Error in T90 measurement, scaled by same factor as T90",Error propagates with time dilation,Seconds,Linear with (1+z),Temporal
+t90_start,Affected by (1+z),"Start time of T90 interval, subject to time dilation",Relative timing dilated by (1+z),Seconds,Linear with (1+z),Temporal
+fluence,Complex relationship with z,Total energy per unit area; depends on luminosity distance (?z²) and K-correction,Fluence ? Energy/(4?DL²) with K-correction for spectral shift,erg/cm²,Decreases with z² and K-correction,Energy
+fluence_error,Complex relationship with z,Error in fluence measurement,Error propagates with fluence dependencies,erg/cm²,Complex,Energy
+flux_1024,Decreases with z²,Peak flux decreases with luminosity distance squared plus K-correction effects,Flux ? Luminosity/(4?DL²) where DL ? z for nearby sources,Photons/cm²/s or erg/cm²/s,"Inverse square with distance, K-correction for spectrum",Flux
+flux_1024_error,Complex relationship with z,Error in peak flux measurement,Error propagates with flux dependencies,Photons/cm²/s or erg/cm²/s,Complex,Flux
+flux_1024_time,Affected by (1+z),"Time interval over which 1024ms flux measured, dilated",Observational time interval stretched by time dilation,Seconds,Linear with (1+z),Temporal
+flux_64,Decreases with z²,Peak flux decreases with luminosity distance squared plus K-correction effects,Flux ? Luminosity/(4?DL²) where DL ? z for nearby sources,Photons/cm²/s or erg/cm²/s,"Inverse square with distance, K-correction for spectrum",Flux
+flux_64_error,Complex relationship with z,Error in peak flux measurement,Error propagates with flux dependencies,Photons/cm²/s or erg/cm²/s,Complex,Flux
+flnc_band_ampl,Complex relationship with z,Band function normalization amplitude for fluence spectrum,Amplitude depends on energy scale and distance; affected by K-correction,Photons/keV/cm²,"Decreases with distance, K-correction",Spectral
+flnc_band_ampl_pos_err,Complex relationship with z,Spectral amplitude parameter affected by distance,Normalization decreases with luminosity distance,Photons/keV/cm² or similar,Decreases with distance,Spectral
+flnc_band_ampl_neg_err,Complex relationship with z,Spectral amplitude parameter affected by distance,Normalization decreases with luminosity distance,Photons/keV/cm² or similar,Decreases with distance,Spectral
+flnc_band_epeak,"Shifts as Epeak,obs = Epeak,rest/(1+z)",Observed peak energy redshifted from rest frame,Key parameter in Amati relation; redshifted to lower energies,keV,Inverse linear with (1+z),Spectral
+flnc_band_epeak_pos_err,Scales with (1+z),Error in peak energy measurement,Error propagates with redshift scaling of Epeak,keV,Scales with redshift,Spectral
+flnc_band_epeak_neg_err,Scales with (1+z),Error in peak energy measurement,Error propagates with redshift scaling of Epeak,keV,Scales with redshift,Spectral
+flnc_band_alpha,No direct relationship,Low-energy power-law index of Band function for fluence,"Intrinsic spectral shape parameter, not affected by redshift",Dimensionless,None,Spectral
+flnc_band_alpha_pos_err,No direct relationship,Error in spectral index measurement,Intrinsic parameter errors not affected by redshift,Dimensionless,None,Spectral
+flnc_band_alpha_neg_err,No direct relationship,Error in spectral index measurement,Intrinsic parameter errors not affected by redshift,Dimensionless,None,Spectral
+flnc_band_beta,No direct relationship,High-energy power-law index of Band function for fluence,"Intrinsic spectral shape parameter, not affected by redshift",Dimensionless,None,Spectral
+flnc_band_beta_pos_err,No direct relationship,Error in spectral index measurement,Intrinsic parameter errors not affected by redshift,Dimensionless,None,Spectral
+flnc_band_beta_neg_err,No direct relationship,Error in spectral index measurement,Intrinsic parameter errors not affected by redshift,Dimensionless,None,Spectral
+flnc_spectrum_start,Affected by (1+z),Start time of fluence spectrum integration,Time interval affected by cosmological time dilation,Seconds,Linear with (1+z),Temporal
+flnc_spectrum_stop,Affected by (1+z),Stop time of fluence spectrum integration,Time boundary dilated by (1+z),Seconds,Linear with (1+z),Temporal
+pflx_best_fitting_model,No relationship,Best-fit model identifier for peak flux,"Model selection result, not cosmological",Text,None,Statistical
+pflx_best_model_redchisq,No relationship,Reduced chi-squared for best peak flux model,Statistical fit quality measure,Dimensionless,None,Statistical
+flnc_best_fitting_model,No relationship,Best-fit model identifier for fluence,Statistical model selection,Text,None,Statistical
+flnc_best_model_redchisq,No relationship,Reduced chi-squared for best fluence model,Goodness of fit statistic,Dimensionless,None,Statistical
+actual_1024ms_interval,Affected by (1+z),Actual time interval used for measurement,Time intervals dilated in observer frame,Seconds,Linear with (1+z),Temporal
+actual_256ms_interval,Affected by (1+z),Actual 256ms measurement interval,Cosmological time dilation effect,Seconds,Linear with (1+z),Temporal
+actual_64ms_interval,Affected by (1+z),Actual 64ms measurement interval,Time dilation applies to all temporal scales,Seconds,Linear with (1+z),Temporal
+back_interval_high_start,No relationship,Start of high-energy background interval,Instrumental background measurement time,Seconds,None,Instrumental
+back_interval_high_stop,No relationship,Stop of high-energy background interval,Background measurement timing,Seconds,None,Instrumental
+back_interval_low_start,No relationship,Start of low-energy background interval,Instrumental background timing,Seconds,None,Instrumental
+back_interval_low_stop,No relationship,Stop of low-energy background interval,Background measurement parameter,Seconds,None,Instrumental
+bcat_detector_mask,No relationship,Detector mask for burst catalog,Instrumental configuration parameter,Bitmask,None,Instrumental
+bcatalog,No relationship,Catalog flag or identifier,Database categorization,Text/Flag,None,Metadata
+bii,No direct relationship,Galactic latitude coordinate,Galactic coordinate system position,Degrees,None,Positional
+duration_energy_high,Shifts as E_obs = E_rest/(1+z),High energy bound for duration measurement,Energy boundary redshifted to lower observed energies,keV,Inverse linear with (1+z),Energy
+duration_energy_low,Shifts as E_obs = E_rest/(1+z),Low energy bound for duration measurement,Energy boundary affected by cosmological redshift,keV,Inverse linear with (1+z),Energy
+error_radius,No direct relationship,Positional uncertainty radius,"Instrumental precision, not cosmological",Arcminutes,None,Positional
+flnc_band_dof,No relationship,Degrees of freedom in Band function fit to fluence spectrum,"Statistical fitting parameter, independent of redshift",Count,None,Statistical
+flnc_band_ergflnc,Complex relationship with z,Energy fluence from Band function model,Energy fluence ? Eiso/(4?DL²) with K-correction,erg/cm²,Decreases with z² and K-correction,Energy
+flnc_band_ergflnc_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+flnc_band_ergflncb,Complex relationship with z,Broad-band energy fluence from Band model,"Broader energy integration, still affected by distance",erg/cm²,Complex with K-correction,Energy
+flnc_band_ergflncb_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+flnc_band_ergflux,Complex relationship with z,Energy flux from Band function model,Energy flux affected by distance and K-correction,erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_band_ergflux_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+flnc_band_phtflnc,Complex relationship with z,Photon fluence from Band function,Photon number affected by distance and spectral evolution,Photons/cm²,Complex with K-correction,Photon
+flnc_band_phtflnc_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+flnc_band_phtflncb,Complex relationship with z,Broad-band photon fluence from Band model,Broader band reduces some K-correction effects,Photons/cm²,Complex,Photon
+flnc_band_phtflncb_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+flnc_band_phtflux,Complex relationship with z,Photon flux from Band function,Photon rate affected by cosmological effects,Photons/cm²/s,Complex with distance and K-correction,Photon
+flnc_band_phtflux_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+flnc_band_phtfluxb,Complex relationship with z,Broad-band photon flux from Band model,Broader energy band photon flux,Photons/cm²/s,Complex,Photon
+flnc_band_phtfluxb_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+flnc_band_redchisq,No relationship,Reduced chi-squared for Band function fit to fluence,"Goodness of fit statistic, not cosmological",Dimensionless,None,Statistical
+flnc_band_redfitstat,No relationship,Reduced fit statistic for Band function fluence fit,Statistical measure of fit quality,Dimensionless,None,Statistical
+flnc_band_statistic,No relationship,Fit statistic for Band function fluence model,Statistical fitting measure,Dimensionless,None,Statistical
+flnc_comp_ampl,Complex relationship with z,Comptonized model amplitude for fluence spectrum,Normalization affected by distance and K-correction,Photons/keV/cm²,Decreases with distance,Spectral
+flnc_comp_ampl_neg_err,Complex relationship with z,Error in Comptonized model amplitude,Error scales with amplitude dependencies,Same as amplitude,Complex,Spectral
+flnc_comp_ampl_pos_err,Complex relationship with z,Error in Comptonized model amplitude,Error scales with amplitude dependencies,Same as amplitude,Complex,Spectral
+flnc_comp_dof,No relationship,Degrees of freedom for Comptonized model fit to fluence,Statistical parameter,Count,None,Statistical
+flnc_comp_epeak,"Shifts as Epeak,obs = Epeak,rest/(1+z)",Peak energy for Comptonized model (fluence),Cosmologically redshifted,keV,Inverse linear with (1+z),Spectral
+flnc_comp_epeak_neg_err,Scales with (1+z),Error in peak energy measurement,Error propagates with redshift scaling of Epeak,keV,Scales with redshift,Spectral
+flnc_comp_epeak_pos_err,Scales with (1+z),Error in peak energy measurement,Error propagates with redshift scaling of Epeak,keV,Scales with redshift,Spectral
+flnc_comp_ergflnc,Complex relationship with z,Energy fluence/flux from Comptonized model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_comp_ergflnc_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_comp_ergflncb,Complex relationship with z,Energy fluence/flux from Comptonized model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_comp_ergflncb_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_comp_ergflux,Complex relationship with z,Energy fluence/flux from Comptonized model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_comp_ergflux_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_comp_index,No direct relationship,Power-law index in Comptonized model for fluence,Intrinsic spectral shape parameter,Dimensionless,None,Spectral
+flnc_comp_index_neg_err,No direct relationship,Error in Comptonized model spectral index,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_comp_index_pos_err,No direct relationship,Error in Comptonized model spectral index,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_comp_phtflnc,Complex relationship with z,Photon fluence/flux from Comptonized model,Photon count affected by distance and spectral evolution,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_comp_phtflnc_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_comp_phtflncb,Complex relationship with z,Photon fluence/flux from Comptonized model,Photon count affected by distance and spectral evolution,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_comp_phtflncb_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_comp_phtflux,Complex relationship with z,Photon fluence/flux from Comptonized model,Photon count affected by distance and spectral evolution,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_comp_phtflux_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_comp_phtfluxb,Complex relationship with z,Photon fluence/flux from Comptonized model,Photon count affected by distance and spectral evolution,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_comp_phtfluxb_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_comp_pivot,"Shifts as Epivot,obs = Epivot,rest/(1+z)","Pivot energy in Comptonized model, cosmologically redshifted",Energy scale parameter affected by redshift,keV,Inverse linear with (1+z),Spectral
+flnc_comp_pivot_neg_err,Scales with redshift,Error in pivot energy measurement,Error scales with energy redshift,keV,Scales with redshift,Spectral
+flnc_comp_pivot_pos_err,Scales with redshift,Error in pivot energy measurement,Error scales with energy redshift,keV,Scales with redshift,Spectral
+flnc_comp_redchisq,No relationship,Reduced chi-squared for Comptonized fluence fit,Goodness of fit measure,Dimensionless,None,Statistical
+flnc_comp_redfitstat,No relationship,Reduced fit statistic for Comptonized fluence model,Statistical measure,Dimensionless,None,Statistical
+flnc_comp_statistic,No relationship,Fit statistic for Comptonized fluence model,Statistical fitting parameter,Dimensionless,None,Statistical
+flnc_plaw_ampl,Complex relationship with z,Power-law model amplitude for fluence spectrum,Normalization decreases with distance,Photons/keV/cm²,Decreases with distance,Spectral
+flnc_plaw_ampl_neg_err,Complex relationship with z,Error in power-law amplitude,Error scales with amplitude,Same as amplitude,Complex,Spectral
+flnc_plaw_ampl_pos_err,Complex relationship with z,Error in power-law amplitude,Error scales with amplitude,Same as amplitude,Complex,Spectral
+flnc_plaw_dof,No relationship,Degrees of freedom for power-law fluence fit,Statistical parameter,Count,None,Statistical
+flnc_plaw_ergflnc,Complex relationship with z,Energy fluence/flux from power-law model,Energy affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_plaw_ergflnc_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_plaw_ergflncb,Complex relationship with z,Energy fluence/flux from power-law model,Energy affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_plaw_ergflncb_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_plaw_ergflux,Complex relationship with z,Energy fluence/flux from power-law model,Energy affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_plaw_ergflux_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_plaw_index,No direct relationship,Power-law spectral index for fluence,Intrinsic spectral shape parameter,Dimensionless,None,Spectral
+flnc_plaw_index_neg_err,No direct relationship,Error in power-law spectral index,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_plaw_index_pos_err,No direct relationship,Error in power-law spectral index,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_plaw_phtflnc,Complex relationship with z,Photon fluence/flux from power-law model,Photon count affected by distance and spectral shift,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_plaw_phtflnc_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_plaw_phtflncb,Complex relationship with z,Photon fluence/flux from power-law model,Photon count affected by distance and spectral shift,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_plaw_phtflncb_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_plaw_phtflux,Complex relationship with z,Photon fluence/flux from power-law model,Photon count affected by distance and spectral shift,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_plaw_phtflux_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_plaw_phtfluxb,Complex relationship with z,Photon fluence/flux from power-law model,Photon count affected by distance and spectral shift,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_plaw_phtfluxb_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_plaw_pivot,"Shifts as Epivot,obs = Epivot,rest/(1+z)","Pivot energy for power-law model, redshifted",Energy reference point affected by cosmological redshift,keV,Inverse linear with (1+z),Spectral
+flnc_plaw_pivot_neg_err,Scales with redshift,Error in pivot energy,Error affected by energy redshift,keV,Scales with redshift,Spectral
+flnc_plaw_pivot_pos_err,Scales with redshift,Error in pivot energy,Error affected by energy redshift,keV,Scales with redshift,Spectral
+flnc_plaw_redchisq,No relationship,Reduced chi-squared for power-law fluence fit,Goodness of fit statistic,Dimensionless,None,Statistical
+flnc_plaw_redfitstat,No relationship,Reduced fit statistic for power-law fluence,Statistical quality measure,Dimensionless,None,Statistical
+flnc_plaw_statistic,No relationship,Fit statistic for power-law fluence model,Statistical fitting parameter,Dimensionless,None,Statistical
+flnc_sbpl_ampl,Complex relationship with z,Smoothly broken power-law amplitude for fluence,Normalization decreases with distance,Photons/keV/cm²,Decreases with distance,Spectral
+flnc_sbpl_ampl_neg_err,Complex relationship with z,Error in SBPL amplitude,Error scales with amplitude,Same as amplitude,Complex,Spectral
+flnc_sbpl_ampl_pos_err,Complex relationship with z,Error in SBPL amplitude,Error scales with amplitude,Same as amplitude,Complex,Spectral
+flnc_sbpl_brken,"Shifts as Ebreak,obs = Ebreak,rest/(1+z)","Break energy in SBPL model, cosmologically redshifted",Energy scale affected by redshift,keV,Inverse linear with (1+z),Spectral
+flnc_sbpl_brken_neg_err,Scales with redshift,Error in SBPL energy parameter,Error affected by energy redshift,keV,Scales with redshift,Spectral
+flnc_sbpl_brken_pos_err,Scales with redshift,Error in SBPL energy parameter,Error affected by energy redshift,keV,Scales with redshift,Spectral
+flnc_sbpl_brksc,No direct relationship,Break scale parameter in SBPL model for fluence,Shape parameter describing smoothness of break,Dimensionless,None,Spectral
+flnc_sbpl_brksc_neg_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_sbpl_brksc_pos_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_sbpl_dof,No relationship,Degrees of freedom for SBPL fluence fit,Statistical parameter,Count,None,Statistical
+flnc_sbpl_ergflnc,Complex relationship with z,Energy fluence/flux from SBPL model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_sbpl_ergflnc_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_sbpl_ergflncb,Complex relationship with z,Energy fluence/flux from SBPL model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_sbpl_ergflncb_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_sbpl_ergflux,Complex relationship with z,Energy fluence/flux from SBPL model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+flnc_sbpl_ergflux_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_sbpl_indx1,No direct relationship,First power-law index in SBPL fluence model,Intrinsic spectral shape parameter,Dimensionless,None,Spectral
+flnc_sbpl_indx1_neg_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_sbpl_indx1_pos_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_sbpl_indx2,No direct relationship,Second power-law index in SBPL fluence model,Intrinsic spectral shape parameter,Dimensionless,None,Spectral
+flnc_sbpl_indx2_neg_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_sbpl_indx2_pos_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+flnc_sbpl_phtflnc,Complex relationship with z,Photon fluence/flux from SBPL model,Photon count affected by distance and spectral effects,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_sbpl_phtflnc_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_sbpl_phtflncb,Complex relationship with z,Photon fluence/flux from SBPL model,Photon count affected by distance and spectral effects,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_sbpl_phtflncb_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_sbpl_phtflux,Complex relationship with z,Photon fluence/flux from SBPL model,Photon count affected by distance and spectral effects,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_sbpl_phtflux_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_sbpl_phtfluxb,Complex relationship with z,Photon fluence/flux from SBPL model,Photon count affected by distance and spectral effects,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+flnc_sbpl_phtfluxb_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+flnc_sbpl_pivot,"Shifts as Epivot,obs = Epivot,rest/(1+z)",Pivot energy in SBPL fluence model,Reference energy affected by redshift,keV,Inverse linear with (1+z),Spectral
+flnc_sbpl_pivot_neg_err,Scales with redshift,Error in SBPL energy parameter,Error affected by energy redshift,keV,Scales with redshift,Spectral
+flnc_sbpl_pivot_pos_err,Scales with redshift,Error in SBPL energy parameter,Error affected by energy redshift,keV,Scales with redshift,Spectral
+flnc_sbpl_redchisq,No relationship,Reduced chi-squared for SBPL fluence fit,Goodness of fit measure,Dimensionless,None,Statistical
+flnc_sbpl_redfitstat,No relationship,Reduced fit statistic for SBPL fluence,Statistical measure,Dimensionless,None,Statistical
+flnc_sbpl_statistic,No relationship,Fit statistic for SBPL fluence model,Statistical fitting parameter,Dimensionless,None,Statistical
+flu_high,Complex relationship with z,High-energy fluence measurement,Energy-band specific fluence affected by K-correction,erg/cm²,Complex with K-correction,Energy
+flu_low,Complex relationship with z,Low-energy fluence measurement,Band-specific fluence with K-correction effects,erg/cm²,Complex with K-correction,Energy
+fluence_batse,Complex relationship with z,BATSE instrument fluence measurement,Subject to same cosmological effects as fluence,erg/cm²,Decreases with z² and K-correction,Energy
+fluence_batse_error,Complex relationship with z,Error in BATSE fluence,Error propagates with fluence,erg/cm²,Complex,Energy
+flux_256,Decreases with z²,Peak flux decreases with luminosity distance squared plus K-correction effects,Flux ? Luminosity/(4?DL²) where DL ? z for nearby sources,Photons/cm²/s or erg/cm²/s,"Inverse square with distance, K-correction for spectrum",Flux
+flux_256_error,Complex relationship with z,Error in peak flux measurement,Error propagates with flux dependencies,Photons/cm²/s or erg/cm²/s,Complex,Flux
+flux_256_time,Affected by (1+z),Time interval for 256ms flux measurement,Time interval affected by cosmological time dilation,Seconds,Linear with (1+z),Temporal
+flux_64_time,Affected by (1+z),Time interval for 64ms flux measurement,Time dilation affects all temporal measurements,Seconds,Linear with (1+z),Temporal
+flux_batse_1024,Decreases with z²,Peak flux decreases with luminosity distance squared plus K-correction effects,Flux ? Luminosity/(4?DL²) where DL ? z for nearby sources,Photons/cm²/s or erg/cm²/s,"Inverse square with distance, K-correction for spectrum",Flux
+flux_batse_1024_error,Complex relationship with z,Error in peak flux measurement,Error propagates with flux dependencies,Photons/cm²/s or erg/cm²/s,Complex,Flux
+flux_batse_1024_time,Affected by (1+z),Time interval for BATSE 1024ms flux,Temporal measurement affected by time dilation,Seconds,Linear with (1+z),Temporal
+flux_batse_256,Decreases with z²,Peak flux decreases with luminosity distance squared plus K-correction effects,Flux ? Luminosity/(4?DL²) where DL ? z for nearby sources,Photons/cm²/s or erg/cm²/s,"Inverse square with distance, K-correction for spectrum",Flux
+flux_batse_256_error,Complex relationship with z,Error in peak flux measurement,Error propagates with flux dependencies,Photons/cm²/s or erg/cm²/s,Complex,Flux
+flux_batse_256_time,Affected by (1+z),Time interval for BATSE 256ms flux,Time dilation affects measurement interval,Seconds,Linear with (1+z),Temporal
+flux_batse_64,Decreases with z²,Peak flux decreases with luminosity distance squared plus K-correction effects,Flux ? Luminosity/(4?DL²) where DL ? z for nearby sources,Photons/cm²/s or erg/cm²/s,"Inverse square with distance, K-correction for spectrum",Flux
+flux_batse_64_error,Complex relationship with z,Error in peak flux measurement,Error propagates with flux dependencies,Photons/cm²/s or erg/cm²/s,Complex,Flux
+flux_batse_64_time,Affected by (1+z),Time interval for BATSE 64ms flux,Temporal parameter dilated by cosmology,Seconds,Linear with (1+z),Temporal
+last_modified,No relationship,Database timestamp,Data processing timestamp,Date/Time,None,Metadata
+lii,No direct relationship,Galactic longitude coordinate,Galactic coordinate system position,Degrees,None,Positional
+pflx_band_alpha,No direct relationship,Low-energy power-law index of Band function for peak flux,Intrinsic spectral shape parameter,Dimensionless,None,Spectral
+pflx_band_alpha_neg_err,No direct relationship,Error in spectral index measurement,Intrinsic parameter errors not affected by redshift,Dimensionless,None,Spectral
+pflx_band_alpha_pos_err,No direct relationship,Error in spectral index measurement,Intrinsic parameter errors not affected by redshift,Dimensionless,None,Spectral
+pflx_band_ampl,Complex relationship with z,Band function normalization amplitude for peak flux spectrum,Peak flux amplitude affected by luminosity distance and K-correction,Photons/keV/cm²/s,"Decreases with distance, K-correction",Spectral
+pflx_band_ampl_neg_err,Complex relationship with z,Spectral amplitude parameter affected by distance,Normalization decreases with luminosity distance,Photons/keV/cm² or similar,Decreases with distance,Spectral
+pflx_band_ampl_pos_err,Complex relationship with z,Spectral amplitude parameter affected by distance,Normalization decreases with luminosity distance,Photons/keV/cm² or similar,Decreases with distance,Spectral
+pflx_band_beta,No direct relationship,High-energy power-law index of Band function for peak flux,Intrinsic spectral shape parameter,Dimensionless,None,Spectral
+pflx_band_beta_neg_err,No direct relationship,Error in spectral index measurement,Intrinsic parameter errors not affected by redshift,Dimensionless,None,Spectral
+pflx_band_beta_pos_err,No direct relationship,Error in spectral index measurement,Intrinsic parameter errors not affected by redshift,Dimensionless,None,Spectral
+pflx_band_dof,No relationship,Degrees of freedom in Band function fit to peak flux spectrum,Statistical fitting parameter,Count,None,Statistical
+pflx_band_epeak,"Shifts as Epeak,obs = Epeak,rest/(1+z)",Peak energy in observed frame for peak flux spectrum,Cosmologically redshifted from rest frame value,keV,Inverse linear with (1+z),Spectral
+pflx_band_epeak_neg_err,Scales with (1+z),Error in peak energy measurement,Error propagates with redshift scaling of Epeak,keV,Scales with redshift,Spectral
+pflx_band_epeak_pos_err,Scales with (1+z),Error in peak energy measurement,Error propagates with redshift scaling of Epeak,keV,Scales with redshift,Spectral
+pflx_band_ergflnc,Complex relationship with z,Energy fluence at peak flux time,Subject to cosmological distance effects,erg/cm²,Complex with distance,Energy
+pflx_band_ergflnc_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+pflx_band_ergflncb,Complex relationship with z,Broad-band energy fluence at peak,Peak time broad-band energy measurement,erg/cm²,Complex,Energy
+pflx_band_ergflncb_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+pflx_band_ergflux,Complex relationship with z,Peak energy flux from Band model,Peak flux scales with luminosity distance,erg/cm²/s,Decreases with z²,Energy
+pflx_band_ergflux_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+pflx_band_phtflnc,Complex relationship with z,Photon fluence at peak time,Photon count affected by cosmological distance,Photons/cm²,Complex,Photon
+pflx_band_phtflnc_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+pflx_band_phtflncb,Complex relationship with z,Broad-band photon fluence at peak,Broader energy band integration,Photons/cm²,Complex,Photon
+pflx_band_phtflncb_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+pflx_band_phtflux,Complex relationship with z,Peak photon flux from Band model,Peak photon rate decreases with distance,Photons/cm²/s,Decreases with z²,Photon
+pflx_band_phtflux_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+pflx_band_phtfluxb,Complex relationship with z,Peak broad-band photon flux,Peak photon flux in broader energy band,Photons/cm²/s,Decreases with z²,Photon
+pflx_band_phtfluxb_error,Complex relationship with z,Error in flux/fluence measurement,Error propagates with underlying parameter dependencies,Same as base parameter,Complex,Error
+pflx_band_redchisq,No relationship,Reduced chi-squared for Band function fit to peak flux,Statistical fit quality measure,Dimensionless,None,Statistical
+pflx_band_redfitstat,No relationship,Reduced fit statistic for Band function peak flux fit,Fit quality statistic,Dimensionless,None,Statistical
+pflx_band_statistic,No relationship,Fit statistic for Band function peak flux model,Statistical measure,Dimensionless,None,Statistical
+pflx_comp_ampl,Complex relationship with z,Comptonized model amplitude for peak flux,Peak flux normalization decreases with distance,Photons/keV/cm²/s,Decreases with distance,Spectral
+pflx_comp_ampl_neg_err,Complex relationship with z,Error in Comptonized model amplitude,Error scales with amplitude dependencies,Same as amplitude,Complex,Spectral
+pflx_comp_ampl_pos_err,Complex relationship with z,Error in Comptonized model amplitude,Error scales with amplitude dependencies,Same as amplitude,Complex,Spectral
+pflx_comp_dof,No relationship,Degrees of freedom for Comptonized model fit to peak flux,Statistical parameter,Count,None,Statistical
+pflx_comp_epeak,"Shifts as Epeak,obs = Epeak,rest/(1+z)",Peak energy for Comptonized model (peak flux),Cosmologically redshifted,keV,Inverse linear with (1+z),Spectral
+pflx_comp_epeak_neg_err,Scales with (1+z),Error in peak energy measurement,Error propagates with redshift scaling of Epeak,keV,Scales with redshift,Spectral
+pflx_comp_epeak_pos_err,Scales with (1+z),Error in peak energy measurement,Error propagates with redshift scaling of Epeak,keV,Scales with redshift,Spectral
+pflx_comp_ergflnc,Complex relationship with z,Energy fluence/flux from Comptonized model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_comp_ergflnc_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_comp_ergflncb,Complex relationship with z,Energy fluence/flux from Comptonized model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_comp_ergflncb_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_comp_ergflux,Complex relationship with z,Energy fluence/flux from Comptonized model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_comp_ergflux_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_comp_index,No direct relationship,Power-law index in Comptonized model for peak flux,Intrinsic spectral parameter,Dimensionless,None,Spectral
+pflx_comp_index_neg_err,No direct relationship,Error in Comptonized model spectral index,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_comp_index_pos_err,No direct relationship,Error in Comptonized model spectral index,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_comp_phtflnc,Complex relationship with z,Photon fluence/flux from Comptonized model,Photon count affected by distance and spectral evolution,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_comp_phtflnc_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_comp_phtflncb,Complex relationship with z,Photon fluence/flux from Comptonized model,Photon count affected by distance and spectral evolution,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_comp_phtflncb_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_comp_phtflux,Complex relationship with z,Photon fluence/flux from Comptonized model,Photon count affected by distance and spectral evolution,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_comp_phtflux_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_comp_phtfluxb,Complex relationship with z,Photon fluence/flux from Comptonized model,Photon count affected by distance and spectral evolution,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_comp_phtfluxb_error,Complex relationship with z,Error in Comptonized model energy/photon parameter,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_comp_pivot,"Shifts as Epivot,obs = Epivot,rest/(1+z)",Pivot energy for peak flux Comptonized model,Cosmologically redshifted energy parameter,keV,Inverse linear with (1+z),Spectral
+pflx_comp_pivot_neg_err,Scales with redshift,Error in pivot energy measurement,Error scales with energy redshift,keV,Scales with redshift,Spectral
+pflx_comp_pivot_pos_err,Scales with redshift,Error in pivot energy measurement,Error scales with energy redshift,keV,Scales with redshift,Spectral
+pflx_comp_redchisq,No relationship,Reduced chi-squared for Comptonized peak flux fit,Statistical fit quality,Dimensionless,None,Statistical
+pflx_comp_redfitstat,No relationship,Reduced fit statistic for Comptonized peak flux model,Fit quality measure,Dimensionless,None,Statistical
+pflx_comp_statistic,No relationship,Fit statistic for Comptonized peak flux model,Statistical parameter,Dimensionless,None,Statistical
+pflx_plaw_ampl,Complex relationship with z,Power-law model amplitude for peak flux,Peak flux normalization affected by distance,Photons/keV/cm²/s,Decreases with distance,Spectral
+pflx_plaw_ampl_neg_err,Complex relationship with z,Error in power-law amplitude,Error scales with amplitude,Same as amplitude,Complex,Spectral
+pflx_plaw_ampl_pos_err,Complex relationship with z,Error in power-law amplitude,Error scales with amplitude,Same as amplitude,Complex,Spectral
+pflx_plaw_dof,No relationship,Degrees of freedom for power-law peak flux fit,Statistical parameter,Count,None,Statistical
+pflx_plaw_ergflnc,Complex relationship with z,Energy fluence/flux from power-law model,Energy affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_plaw_ergflnc_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_plaw_ergflncb,Complex relationship with z,Energy fluence/flux from power-law model,Energy affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_plaw_ergflncb_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_plaw_ergflux,Complex relationship with z,Energy fluence/flux from power-law model,Energy affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_plaw_ergflux_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_plaw_index,No direct relationship,Power-law spectral index for peak flux,Intrinsic spectral parameter,Dimensionless,None,Spectral
+pflx_plaw_index_neg_err,No direct relationship,Error in power-law spectral index,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_plaw_index_pos_err,No direct relationship,Error in power-law spectral index,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_plaw_phtflnc,Complex relationship with z,Photon fluence/flux from power-law model,Photon count affected by distance and spectral shift,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_plaw_phtflnc_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_plaw_phtflncb,Complex relationship with z,Photon fluence/flux from power-law model,Photon count affected by distance and spectral shift,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_plaw_phtflncb_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_plaw_phtflux,Complex relationship with z,Photon fluence/flux from power-law model,Photon count affected by distance and spectral shift,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_plaw_phtflux_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_plaw_phtfluxb,Complex relationship with z,Photon fluence/flux from power-law model,Photon count affected by distance and spectral shift,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_plaw_phtfluxb_error,Complex relationship with z,Error in power-law energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_plaw_pivot,"Shifts as Epivot,obs = Epivot,rest/(1+z)",Pivot energy for peak flux power-law model,Reference energy cosmologically redshifted,keV,Inverse linear with (1+z),Spectral
+pflx_plaw_pivot_neg_err,Scales with redshift,Error in pivot energy,Error affected by energy redshift,keV,Scales with redshift,Spectral
+pflx_plaw_pivot_pos_err,Scales with redshift,Error in pivot energy,Error affected by energy redshift,keV,Scales with redshift,Spectral
+pflx_plaw_redchisq,No relationship,Reduced chi-squared for power-law peak flux fit,Statistical fit measure,Dimensionless,None,Statistical
+pflx_plaw_redfitstat,No relationship,Reduced fit statistic for power-law peak flux,Fit quality statistic,Dimensionless,None,Statistical
+pflx_plaw_statistic,No relationship,Fit statistic for power-law peak flux model,Statistical parameter,Dimensionless,None,Statistical
+pflx_sbpl_ampl,Complex relationship with z,SBPL amplitude for peak flux,Peak flux normalization affected by distance,Photons/keV/cm²/s,Decreases with distance,Spectral
+pflx_sbpl_ampl_neg_err,Complex relationship with z,Error in SBPL amplitude,Error scales with amplitude,Same as amplitude,Complex,Spectral
+pflx_sbpl_ampl_pos_err,Complex relationship with z,Error in SBPL amplitude,Error scales with amplitude,Same as amplitude,Complex,Spectral
+pflx_sbpl_brken,"Shifts as Ebreak,obs = Ebreak,rest/(1+z)",Break energy for peak flux SBPL,Break energy redshifted to lower values,keV,Inverse linear with (1+z),Spectral
+pflx_sbpl_brken_neg_err,Scales with redshift,Error in SBPL energy parameter,Error affected by energy redshift,keV,Scales with redshift,Spectral
+pflx_sbpl_brken_pos_err,Scales with redshift,Error in SBPL energy parameter,Error affected by energy redshift,keV,Scales with redshift,Spectral
+pflx_sbpl_brksc,No direct relationship,Break scale parameter for peak flux SBPL,Intrinsic shape parameter,Dimensionless,None,Spectral
+pflx_sbpl_brksc_neg_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_sbpl_brksc_pos_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_sbpl_dof,No relationship,Degrees of freedom for SBPL peak flux fit,Statistical parameter,Count,None,Statistical
+pflx_sbpl_ergflnc,Complex relationship with z,Energy fluence/flux from SBPL model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_sbpl_ergflnc_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_sbpl_ergflncb,Complex relationship with z,Energy fluence/flux from SBPL model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_sbpl_ergflncb_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_sbpl_ergflux,Complex relationship with z,Energy fluence/flux from SBPL model,Energy measurement affected by distance and K-correction,erg/cm² or erg/cm²/s,Decreases with z² and K-correction,Energy
+pflx_sbpl_ergflux_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_sbpl_indx1,No direct relationship,First power-law index in SBPL peak flux model,Intrinsic spectral parameter,Dimensionless,None,Spectral
+pflx_sbpl_indx1_neg_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_sbpl_indx1_pos_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_sbpl_indx2,No direct relationship,Second power-law index in SBPL peak flux model,Intrinsic spectral parameter,Dimensionless,None,Spectral
+pflx_sbpl_indx2_neg_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_sbpl_indx2_pos_err,No direct relationship,Error in SBPL shape parameter,Intrinsic parameter error,Dimensionless,None,Spectral
+pflx_sbpl_phtflnc,Complex relationship with z,Photon fluence/flux from SBPL model,Photon count affected by distance and spectral effects,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_sbpl_phtflnc_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_sbpl_phtflncb,Complex relationship with z,Photon fluence/flux from SBPL model,Photon count affected by distance and spectral effects,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_sbpl_phtflncb_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_sbpl_phtflux,Complex relationship with z,Photon fluence/flux from SBPL model,Photon count affected by distance and spectral effects,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_sbpl_phtflux_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_sbpl_phtfluxb,Complex relationship with z,Photon fluence/flux from SBPL model,Photon count affected by distance and spectral effects,Photons/cm² or Photons/cm²/s,Complex with K-correction,Photon
+pflx_sbpl_phtfluxb_error,Complex relationship with z,Error in SBPL energy/photon measurement,Error propagates with base parameter,Same as base parameter,Complex,Error
+pflx_sbpl_pivot,"Shifts as Epivot,obs = Epivot,rest/(1+z)",Pivot energy in SBPL peak flux model,Energy reference point redshifted,keV,Inverse linear with (1+z),Spectral
+pflx_sbpl_pivot_neg_err,Scales with redshift,Error in SBPL energy parameter,Error affected by energy redshift,keV,Scales with redshift,Spectral
+pflx_sbpl_pivot_pos_err,Scales with redshift,Error in SBPL energy parameter,Error affected by energy redshift,keV,Scales with redshift,Spectral
+pflx_sbpl_redchisq,No relationship,Reduced chi-squared for SBPL peak flux fit,Statistical fit quality,Dimensionless,None,Statistical
+pflx_sbpl_redfitstat,No relationship,Reduced fit statistic for SBPL peak flux,Fit quality measure,Dimensionless,None,Statistical
+pflx_sbpl_statistic,No relationship,Fit statistic for SBPL peak flux model,Statistical parameter,Dimensionless,None,Statistical
+pflx_spectrum_start,Affected by (1+z),Start time of peak flux spectrum,Temporal parameter affected by time dilation,Seconds,Linear with (1+z),Temporal
+pflx_spectrum_stop,Affected by (1+z),Stop time of peak flux spectrum,Time interval boundary dilated,Seconds,Linear with (1+z),Temporal
+scat_detector_mask,No relationship,Detector mask for spectral catalog,Instrumental setup parameter,Bitmask,None,Instrumental
+scatalog,No relationship,Secondary catalog flag,Database categorization,Text/Flag,None,Metadata
+t50,Proportional to (1+z),"Duration containing 50% of burst energy, stretched by time dilation",Observed T50 = Intrinsic T50 × (1+z),Seconds,Linear with (1+z),Temporal
+t50_error,Proportional to (1+z),Error in T50 measurement,Error scales with time dilation,Seconds,Linear with (1+z),Temporal
+t50_start,Affected by (1+z),Start time of T50 interval,Relative timing affected by time dilation,Seconds,Linear with (1+z),Temporal
+trigger_name,No relationship,Instrument trigger designation,Operational parameter,Text,None,Identifier
