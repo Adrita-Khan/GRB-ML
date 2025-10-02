@@ -161,9 +161,8 @@ References:
 
 ## Contact
 
--  Adrita Khan
-- **GitHub**: [@Adrita-Khan](https://github.com/Adrita-Khan)
-- **Project Link**: [https://github.com/Adrita-Khan/GRB-ML](https://github.com/Adrita-Khan/GRB-ML)
+**Adrita Khan**  
+[Email](mailto:adrita.khan.official@gmail.com) | [LinkedIn](https://www.linkedin.com/in/adrita-khan) | [Twitter](https://x.com/Adrita_)
 
 
 ---
