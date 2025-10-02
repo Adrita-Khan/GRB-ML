@@ -29,10 +29,10 @@ Astrophysical data is expanding at an unprecedented rate as modern telescopes an
 
 ### Why Machine Learning?
 
-- **Process Unprecedented Data Volumes**: From gigabytes to exabytes, ML scales with the universe's complexity, handling massive datasets efficiently.
-- **Identify Hidden Patterns**: ML enables the discovery of anomalies, classification of celestial objects, and the detection of faint signals invisible to the human eye.
-- **Accelerate Discovery**: By automating repetitive tasks, ML frees astronomers to focus on more complex analyses and theoretical advancements.
-- **Uncover New Physics**: ML can reveal previously undetectable relationships and structures, paving the way for groundbreaking theories.
+* **Handle Large Data**: ML processes massive datasets efficiently.
+* **Identify Patterns**: ML uncovers hidden relationships and detects faint signals.
+* **Accelerate Discovery**: Automates repetitive tasks, allowing focus on complex analysis.
+* **Uncover New Physics**: ML can detect previously undetectable structures.
 
 ### Cosmological Standard Candles
 
@@ -100,30 +100,18 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 
 ### Machine Learning Approaches
 
-1. **Regression Models**
-   - Random Forest Regressor
-   - Gradient Boosting (XGBoost, LightGBM)
-   - Neural Networks (TensorFlow/Keras)
-   - Support Vector Regression
+#### Machine Learning Approaches
 
-2. **Feature Engineering**
-   - Principal Component Analysis (PCA)
-   - Feature selection algorithms
-   - Correlation analysis
-   - Outlier detection and handling
+1. **Regression Models**: Random Forest, XGBoost, Neural Networks, Support Vector Regression
+2. **Feature Engineering**: PCA, feature selection, outlier handling
+3. **Ensemble Methods**: Voting regressors, stacking classifiers
 
-3. **Ensemble Methods**
-   - Voting regressors
-   - Stacking classifiers
-   - Bayesian model averaging
+#### Cosmological Analysis
 
-### Cosmological Analysis
-
-- **Empirical Relations**: Refinement of Amati and Yonetoku relations
-- **Parameter Estimation**: Markov Chain Monte Carlo (MCMC) methods
-- **Model Comparison**: Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC)
-- **Uncertainty Quantification**: Bootstrap resampling and cross-validation
-
+* **Empirical Relations**: Refining Amati and Yonetoku relations
+* **Parameter Estimation**: MCMC methods
+* **Model Comparison**: AIC and BIC for model evaluation
+* **Uncertainty Quantification**: Bootstrap resampling
 
 ## Results
 
@@ -149,10 +137,10 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 
 ## Objectives
 
-- **Explore Correlations**: Use ML techniques to uncover deeper correlations between observable quantities and cosmological parameters, standardizing GRBs as cosmological candles.
-- **Constrain Cosmological Parameters**: Using the correlations found, ML can help constrain key cosmological parameters, including the Hubble constant and dark energy density.
-- **Improve Empirical Relations**: Develop tighter, more accurate relations that provide better standardization than existing Amati and Yonetoku relations.
-- **Cross-validation**: Ensure robust model performance through comprehensive testing and validation procedures.
+* **Explore Correlations**: Use ML to identify correlations between observable quantities and cosmological parameters.
+* **Constrain Cosmological Parameters**: ML can help refine the measurement of Hubble constant and dark energy density.
+* **Improve Empirical Relations**: Develop better standardization relations than the current Amati and Yonetoku relations.
+* **Cross-validation**: Validate model performance using robust testing methods.
 
 
 
