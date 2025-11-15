@@ -19,16 +19,17 @@ This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potenti
 
 ---
 
-## Features
+## Key Features & Objectives
 
-| Feature | Description |
-|---------|-------------|
-| **Advanced ML Models** | Implementation of various machine learning algorithms for GRB analysis |
-| **Cosmological Parameter Estimation** | Tools to constrain Hubble constant and dark energy density |
+| Category | Description |
+|----------|-------------|
+| **Correlation Analysis** | Identify and analyze correlations between observable GRB quantities and cosmological parameters |
+| **Cosmological Constraints** | Refine measurements of Hubble constant and dark energy density using ML-driven approaches |
+| **Empirical Relations** | Improve standardization beyond traditional Amati and Yonetoku relations |
+| **Advanced ML Models** | Random Forest, XGBoost, Neural Networks, and ensemble methods for robust predictions |
 | **Data Preprocessing** | Comprehensive pipeline for cleaning and preparing GRB observational data |
 | **Visualization Tools** | Interactive plots and dashboards for data exploration |
-| **Empirical Relations** | Analysis and improvement of Amati and Yonetoku relations |
-| **Cross-validation Framework** | Robust testing methodology for model validation |
+| **Model Validation** | Robust cross-validation and testing frameworks for reliability |
 
 ---
 
@@ -69,7 +70,6 @@ The project utilizes GRB observational data from multiple sources:
 |--------|-------------|
 | **Swift-BAT GRB Catalog** | Comprehensive catalog of GRBs detected by Swift |
 | **Fermi-GBM Catalog** | High-energy gamma-ray data |
-
 
 ### Data Structure
 
@@ -166,23 +166,6 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 
 ---
 
-## Objectives
-
-| Objective | Description |
-|-----------|-------------|
-| **Explore Correlations** | Use ML to identify correlations between observable quantities and cosmological parameters |
-| **Constrain Cosmological Parameters** | ML can help refine the measurement of Hubble constant and dark energy density |
-| **Improve Empirical Relations** | Develop better standardization relations than the current Amati and Yonetoku relations |
-| **Cross-validation** | Validate model performance using robust testing methods |
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## References
 
 1. [MNRAS Article](https://academic.oup.com/mnras/article/529/3/2676/7611713)
@@ -190,6 +173,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 3. [Fermi GBM Data Analysis](https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/)
 4. [Ioffe zGRBs Part 2](https://www.ioffe.ru/LEA/zGRBs/part2/index.html)
 5. [Fermi GBM Data Tools - Data Finders](https://fermi.gsfc.nasa.gov/ssc/data/analysis/gbm/gbm_data_tools/gdt-docs/notebooks/DataFinders.html)
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
