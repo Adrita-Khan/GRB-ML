@@ -19,20 +19,6 @@ This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potenti
 
 ---
 
-## Table of Contents
-
-- [Features](#features)
-- [Background](#background)
-- [Dataset](#dataset)
-- [Methodology](#methodology)
-- [Results](#results)
-- [Objectives](#objectives)
-- [License](#license)
-- [References](#references)
-- [Contact](#contact)
-
----
-
 ## Features
 
 | Feature | Description |
