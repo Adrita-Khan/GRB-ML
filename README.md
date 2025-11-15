@@ -69,8 +69,7 @@ The project utilizes GRB observational data from multiple sources:
 |--------|-------------|
 | **Swift-BAT GRB Catalog** | Comprehensive catalog of GRBs detected by Swift |
 | **Fermi-GBM Catalog** | High-energy gamma-ray data |
-| **Ground-based Follow-up** | Optical and near-infrared observations |
-| **Literature Compilation** | Curated dataset from peer-reviewed publications |
+
 
 ### Data Structure
 
