@@ -139,31 +139,6 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 | **Model Comparison** | AIC and BIC for model evaluation |
 | **Uncertainty Quantification** | Bootstrap resampling |
 
----
-
-## Results
-
-### Key Findings
-
-> **Note:** Subject to amendments
-
-| Finding | Description |
-|---------|-------------|
-| **Improved Standardization** | ML models achieve 15-20% reduction in scatter compared to traditional empirical relations |
-| **Extended Redshift Range** | Successful calibration of GRBs up to z ~ 9 |
-| **Cosmological Constraints** | Competitive constraints on H₀ with ~5% precision |
-| **Novel Correlations** | Discovery of multi-parameter relations not captured by traditional methods |
-
-### Performance Metrics
-
-> **Note:** The following values are **placeholders** and subject to change after final experimentation and validation.
-
-| Model | R² Score | RMSE | MAE |
-|-------|----------|------|-----|
-| Random Forest | 0.852 | 0.234 | 0.189 |
-| XGBoost | 0.871 | 0.218 | 0.175 |
-| Neural Network | 0.863 | 0.225 | 0.182 |
-| Ensemble | 0.884 | 0.207 | 0.168 |
 
 ---
 
