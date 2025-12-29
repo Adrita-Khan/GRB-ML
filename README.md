@@ -1,5 +1,3 @@
-I'll help you integrate that feature selection information into the README. Here's the updated version with the new content integrated into the appropriate sections:
-
 # GRB-ML: Machine Learning-Based Redshift Estimation for Gamma-Ray Bursts
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
