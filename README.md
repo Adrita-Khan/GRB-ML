@@ -12,7 +12,8 @@
 
 ## Overview
 
-This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potential cosmological standard candles, focusing on improving their standardization and refining empirical relations like the Amati and Yonetoku relations. By exploring correlations between observable quantities and derived cosmological parameters, we aim to constrain the Hubble constant and dark energy density. The goal is to enhance redshift calculations and contribute to understanding the universe's expansion.
+This project uses machine learning to study gamma-ray bursts (GRBs) as potential cosmological standard candles. It focuses on improving GRB standardization and refining empirical relations such as the Amati and Yonetoku relations. By analyzing correlations between observables and cosmological parameters, the project aims to constrain the Hubble constant and dark energy density and improve redshift estimation for studies of the universe’s expansion.
+
 
 **Collaboration:** This is a project of [CAPP](https://www.uj.ac.za/faculties/science/departments-2/physics/research/astrophysics/the-centre-for-astro-particle-physics-capp/) in collaboration with [CASSA](https://cassa.site/) and [CCDS](https://ccds.ai/).
 
@@ -36,7 +37,8 @@ This project uses Machine Learning to analyze Gamma-ray bursts (GRBs) as potenti
 
 ### Context
 
-Astrophysical data is expanding at an unprecedented rate as modern telescopes and detectors continue to evolve. Traditional methods struggle to keep pace with the growing data volumes, often missing subtle patterns and rare events. Manual classification is both time-consuming and prone to errors. However, this presents a significant opportunity. Machine Learning (ML) is rapidly becoming the tool of choice for analyzing astrophysical data, acting as the "telescope" of the 21st century.
+Astrophysical data is growing rapidly, making traditional and manual analysis inefficient. Machine learning provides an effective way to handle large datasets and identify patterns in astrophysical observations.
+
 
 ### Why Machine Learning?
 
@@ -49,13 +51,13 @@ Astrophysical data is expanding at an unprecedented rate as modern telescopes an
 
 ### Cosmological Standard Candles
 
-In cosmology, "standard candles" are astronomical objects with a known intrinsic brightness. This predictable luminosity allows astronomers to measure distances in the universe using the inverse-square law of light. Standard candles play a key role in constructing the "cosmic distance ladder," which helps determine the scale of the universe and its expansion.
+In cosmology, standard candles are objects with known intrinsic brightness. This allows distances to be measured using the inverse-square law of light and makes standard candles essential for building the cosmic distance ladder and studying the universe’s expansion.
 
 ### Gamma-Ray Bursts (GRBs)
 
-Gamma-ray bursts (GRBs) are the most powerful explosions in the universe, capable of being detected in multiple electromagnetic wavebands. They offer a potential alternative to Type Ia supernovae as cosmological standard candles due to their ability to be detected at greater redshifts. By studying GRBs, we can help constrain cosmological parameters such as the Hubble constant and dark energy density.
+Gamma-ray bursts (GRBs) are extremely energetic events detected across multiple electromagnetic bands. Because they can be observed at much higher redshifts than Type Ia supernovae, they are promising alternative standard candles. Studying GRBs can help constrain cosmological parameters such as the Hubble constant and dark energy density.
 
-Despite their promise, GRBs aren't perfect standard candles. However, empirical relations like the **Amati Relation** (relating total energy release to peak energy in the gamma-ray spectrum) and the **Yonetoku Relation** (relating peak luminosity to peak energy) have been proposed. These relations link observable quantities to cosmologically dependent parameters, providing a means to constrain cosmological models.
+Despite their potential, GRBs are not perfect standard candles. Empirical relations such as the **Amati relation** (linking total energy release to spectral peak energy) and the **Yonetoku relation** (linking peak luminosity to peak energy) have been proposed. These relations connect observable quantities to cosmology-dependent parameters and can be used to constrain cosmological models.
 
 ---
 
