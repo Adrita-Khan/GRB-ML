@@ -1,3 +1,5 @@
+I'll help you integrate that feature selection information into the README. Here's the updated version with the new content integrated into the appropriate sections:
+
 # GRB-ML: Machine Learning-Based Redshift Estimation for Gamma-Ray Bursts
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,7 +14,7 @@
 
 ## Overview
 
-This project uses machine learning to study gamma-ray bursts (GRBs) as potential cosmological standard candles. It focuses on improving GRB standardization and refining empirical relations such as the Amati and Yonetoku relations. By analyzing correlations between observables and cosmological parameters, the project aims to constrain the Hubble constant and dark energy density and improve redshift estimation for studies of the universe’s expansion.
+This project uses machine learning to study gamma-ray bursts (GRBs) as potential cosmological standard candles. It focuses on improving GRB standardization and refining empirical relations such as the Amati and Yonetoku relations. By analyzing correlations between observables and cosmological parameters, the project aims to constrain the Hubble constant and dark energy density and improve redshift estimation for studies of the universe's expansion.
 
 
 **Collaboration:** This is a project of [CAPP](https://www.uj.ac.za/faculties/science/departments-2/physics/research/astrophysics/the-centre-for-astro-particle-physics-capp/) in collaboration with [CASSA](https://cassa.site/) and [CCDS](https://ccds.ai/).
@@ -28,6 +30,7 @@ This project uses machine learning to study gamma-ray bursts (GRBs) as potential
 | **Empirical Relations** | Improve standardization beyond traditional Amati and Yonetoku relations |
 | **Advanced ML Models** | Random Forest, XGBoost, Neural Networks, and ensemble methods for robust predictions |
 | **Data Preprocessing** | Comprehensive pipeline for cleaning and preparing GRB observational data |
+| **Feature Selection** | Advanced dimensionality reduction techniques to identify optimal input parameters from high-dimensional data |
 | **Visualization Tools** | Interactive plots and dashboards for data exploration |
 | **Model Validation** | Robust cross-validation and testing frameworks for reliability |
 
@@ -51,7 +54,7 @@ Astrophysical data is growing rapidly, making traditional and manual analysis in
 
 ### Cosmological Standard Candles
 
-In cosmology, standard candles are objects with known intrinsic brightness. This allows distances to be measured using the inverse-square law of light and makes standard candles essential for building the cosmic distance ladder and studying the universe’s expansion.
+In cosmology, standard candles are objects with known intrinsic brightness. This allows distances to be measured using the inverse-square law of light and makes standard candles essential for building the cosmic distance ladder and studying the universe's expansion.
 
 ### Gamma-Ray Bursts (GRBs)
 
@@ -70,7 +73,7 @@ The project utilizes GRB observational data from multiple sources:
 | Source | Description |
 |--------|-------------|
 | **Swift-BAT GRB Catalog** | Comprehensive catalog of GRBs detected by Swift |
-| **Fermi-GBM Catalog** | High-energy gamma-ray data |
+| **Fermi-GBM Catalog** | High-energy gamma-ray data with 306 features for feature selection analysis |
 
 ### Data Structure
 
@@ -129,6 +132,14 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 | **Regression Models** | Random Forest, XGBoost, Neural Networks, Support Vector Regression |
 | **Feature Engineering** | PCA, feature selection, outlier handling |
 | **Ensemble Methods** | Voting regressors, stacking classifiers |
+
+#### Feature Selection Strategy
+
+The project employs advanced feature selection techniques to handle high-dimensional data from the Fermi catalog. With 306 features available, dimensionality reduction is critical for:
+- Identifying the most informative input parameters for redshift estimation
+- Reducing computational complexity and preventing overfitting
+- Improving model interpretability and generalization performance
+- Extracting physically meaningful relationships from observational data
 
 #### Cosmological Analysis
 
