@@ -10,6 +10,10 @@
 
 ---
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=800&color=ff8c00&center=true&vCenter=true&repeat=true&width=820&lines=Machine+Learning+for+Astrophysics;Gamma-Ray+Burst+Analysis;Redshift+Estimation+%7C+ML+Models;Cosmological+Standard+Candles;Amati+%26+Yonetoku+Relations;Hubble+Constant+Constraints;Dark+Energy+Density+Estimation;Random+Forest+%7C+XGBoost+%7C+Neural+Networks;Feature+Selection+%7C+306+Parameters;Swift-BAT+%26+Fermi-GBM+Data;Cosmic+Distance+Ladder;High-Dimensional+Data+Analysis;Ensemble+Methods+%26+Validation;MCMC+Parameter+Estimation;GRB+Standardization;Cosmological+Parameter+Inference" alt="Typing SVG" />
+</p>
+
 ## Overview
 
 This project uses machine learning to study gamma-ray bursts (GRBs) as potential cosmological standard candles. It focuses on improving GRB standardization and refining empirical relations such as the Amati and Yonetoku relations. By analyzing correlations between observables and cosmological parameters, the project aims to constrain the Hubble constant and dark energy density and improve redshift estimation for studies of the universe's expansion.
