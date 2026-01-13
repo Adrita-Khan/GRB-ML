@@ -14,6 +14,14 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=800&color=ff8c00&center=true&vCenter=true&repeat=true&width=820&lines=Machine+Learning+for+Astrophysics;Gamma-Ray+Burst+Analysis;Redshift+Estimation+%7C+ML+Models;Cosmological+Standard+Candles;Amati+%26+Yonetoku+Relations;Hubble+Constant+Constraints;Dark+Energy+Density+Estimation;Random+Forest+%7C+XGBoost+%7C+Neural+Networks;Feature+Selection+%7C+306+Parameters;Swift-BAT+%26+Fermi-GBM+Data;Cosmic+Distance+Ladder;High-Dimensional+Data+Analysis;Ensemble+Methods+%26+Validation;MCMC+Parameter+Estimation;GRB+Standardization;Cosmological+Parameter+Inference" alt="Typing SVG" />
 </p>
 
+
+<p align="center">
+<i>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=800&color=39FF14&center=true&vCenter=true&repeat=true&width=900&lines=Advanced+Machine+Learning+for+Cosmological+Research;Gamma-Ray+Burst+Redshift+Estimation;Constraining+Fundamental+Cosmological+Parameters;High-Dimensional+Feature+Analysis+%7C+306+Parameters;Swift-BAT+and+Fermi-GBM+Observatory+Data;Ensemble+Methods+and+Deep+Learning+Architectures;Hubble+Constant+and+Dark+Energy+Constraints;Standardizing+GRBs+as+Cosmological+Probes" alt="Typing SVG" />
+</i>
+</p>
+
+
 ## Overview
 
 This project uses machine learning to study gamma-ray bursts (GRBs) as potential cosmological standard candles. It focuses on improving GRB standardization and refining empirical relations such as the Amati and Yonetoku relations. By analyzing correlations between observables and cosmological parameters, the project aims to constrain the Hubble constant and dark energy density and improve redshift estimation for studies of the universe's expansion.
@@ -139,6 +147,40 @@ You can retrieve specific columns from the [FERMIGBRST - Fermi GBM Burst Catalog
 
 ## Methodology
 
+
+
+```mermaid
+graph TB
+    A[Raw GRB Observations] --> B[Data Quality Assessment]
+    B --> C[Outlier Detection & Removal]
+    C --> D[Feature Engineering]
+    D --> E[Dimensionality Reduction]
+    E --> F{Model Training}
+    
+    F --> G[Random Forest Regression]
+    F --> H[XGBoost Regression]
+    F --> I[Neural Network Regression]
+    F --> J[Support Vector Regression]
+    
+    G --> K[Cross-Validation]
+    H --> K
+    I --> K
+    J --> K
+    
+    K --> L[Ensemble Construction]
+    L --> M[Redshift Predictions]
+    M --> N[Uncertainty Quantification]
+    N --> O[Cosmological Parameter Inference]
+    
+    style A fill:#2E86AB
+    style E fill:#A23B72
+    style L fill:#F18F01
+    style O fill:#C73E1D
+```
+
+
+
+
 ### Machine Learning Approaches
 
 #### Models Implemented
@@ -190,6 +232,33 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Adrita Khan**
 
 [Email](mailto:adrita.khan.official@gmail.com) | [LinkedIn](https://www.linkedin.com/in/adrita-khan) | [Twitter](https://x.com/Adrita_)
+
+---
+
+
+## Contact
+
+**Adrita Khan**  
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adrita.khan.official@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adrita_Khan-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adrita-khan)
+[![Twitter](https://img.shields.io/badge/Twitter-%40Adrita__-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Adrita_)
+[![GitHub](https://img.shields.io/badge/GitHub-Adrita--Khan-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Adrita-Khan)
+
+</div>
+
+---
+
+<div align="center">
+
+### Project Statistics
+
+![Repo Size](https://img.shields.io/github/repo-size/Adrita-Khan/GRB-ML?style=flat-square)
+![Commit Activity](https://img.shields.io/github/commit-activity/m/Adrita-Khan/GRB-ML?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/Adrita-Khan/GRB-ML?style=flat-square)
+![Contributors](https://img.shields.io/github/contributors/Adrita-Khan/GRB-ML?style=flat-square)
 
 ---
 
