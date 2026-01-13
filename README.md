@@ -18,6 +18,20 @@
 
 This project uses machine learning to study gamma-ray bursts (GRBs) as potential cosmological standard candles. It focuses on improving GRB standardization and refining empirical relations such as the Amati and Yonetoku relations. By analyzing correlations between observables and cosmological parameters, the project aims to constrain the Hubble constant and dark energy density and improve redshift estimation for studies of the universe's expansion.
 
+```mermaid
+graph LR
+    A[GRB Detection & <br/>Observation] --> B[Machine Learning <br/>Analysis]
+    B --> C[Redshift & Distance <br/>Estimation]
+    C --> D[Cosmological <br/>Constraints]
+    D --> E[Dark Energy & <br/>H₀ Inference]
+    
+    style A fill:#2c3e50,stroke:#34495e,stroke-width:2px,color:#ecf0f1
+    style B fill:#3498db,stroke:#2980b9,stroke-width:2px,color:#ecf0f1
+    style C fill:#16a085,stroke:#138d75,stroke-width:2px,color:#ecf0f1
+    style D fill:#8e44ad,stroke:#7d3c98,stroke-width:2px,color:#ecf0f1
+    style E fill:#e67e22,stroke:#d35400,stroke-width:2px,color:#ecf0f1
+```
+
 
 **Collaboration:** This is a project of [CAPP](https://www.uj.ac.za/faculties/science/departments-2/physics/research/astrophysics/the-centre-for-astro-particle-physics-capp/) in collaboration with [CASSA](https://cassa.site/) and [CCDS](https://ccds.ai/).
 
