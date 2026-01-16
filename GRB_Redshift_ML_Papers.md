@@ -20,8 +20,22 @@
 
 ## Key Datasets
 
-- **Swift**: [BAT/XRT Archive](https://swift.gsfc.nasa.gov/archive/grb_table/) | [XRT Live Catalog](https://www.swift.ac.uk/xrt_live_cat/)
-- **Fermi-GBM**: [HEASARC Catalog](https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html)
-- **Konus-Wind**: [IKI GRB Database](http://www.ioffe.ru/LEA/kwgrbdb/)
-- **Optical**: [grbLC.com](http://www.grbLC.com)
-- **Pantheon SNe Ia**: [PantheonPlusSH0ES](https://pantheonplussh0es.github.io/)
+| Dataset | Description | Size/Coverage | Access Link |
+|---------|-------------|---------------|-------------|
+| **Swift-XRT GRB Catalogue** | Live X-ray light curves and spectral fits | Hundreds of GRBs | [Swift XRT Live Cat](https://www.swift.ac.uk/xrt_live_cat/) |
+| **Swift-BAT GRB Catalogue** | Prompt gamma-ray properties | Comprehensive Swift detections | [Swift BAT Archive](https://swift.gsfc.nasa.gov/archive/grb_table/) |
+| **Fermi-GBM Burst Catalog** | Spectral parameters and light curves | 3,900+ GRBs | [HEASARC Fermi-GBM](https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html) |
+| **Aldowma Pseudo-Redshift Catalog** | ML-predicted redshifts for Fermi GRBs | 1,576 GRBs | [Zenodo Dataset](https://doi.org/10.5281/zenodo.13695954) |
+| **Dainotti Optical Catalog** | Comprehensive optical light curves | 64,813 observations, 535 GRBs | [grbLC.com](http://www.grbLC.com) |
+| **Konus-Wind GRB Catalog** | Spectral parameters from Konus-Wind | Extensive spectral data | [IKI GRB Database](http://www.ioffe.ru/LEA/kwgrbdb/) |
+| **Pantheon SNe Ia** | Type Ia supernova cosmology sample | 1,701 SNe Ia | [PantheonPlusSH0ES](https://pantheonplussh0es.github.io/) |
+
+## Dataset Usage by Research Focus
+
+**Redshift Estimation**: Swift BAT/XRT/UVOT, Fermi-GBM, Konus-Wind, Dainotti Optical Catalog
+
+**Classification Tasks**: Swift BAT, Fermi-GBM, Optical photometry
+
+**Cosmological Studies**: GRB Combo-relation, Pantheon SNe Ia
+
+**Dark GRB Analysis**: Swift XRT, Optical catalogs (custom compilations)
